@@ -1,22 +1,15 @@
 {% for control in site.controls %}
-{% if control.boundary == 'infrastructure' %}
-{{ site.data.callout_default }}
-{% endif %}
-{% if control.boundary == 'platform' %}
-{{ site.data.callout_info }}
-{% endif %}
 {{ site.data.callout_primary }}
-  <h2>{{ control.title }}</h2>
+  <h3>{{ control.title }}</h3>
   {% for control in control.controls %}
-    <br>{{ control.control }}</br>
+    <i>{{ control.control }}</i>
+    {% if control.gh-issue %}<li><a href='#{{ control.gh-issue }}'>Github Issue</a></li>{% endif %}
       <div class="progress">
         {{ site.data.alerts.progress_done }}{{ control.done }}{{ site.data.alerts.progress_end }}
         {{ site.data.alerts.progress_doing }}{{ control.doing }}{{ site.data.alerts.progress_end }}
         {{ site.data.alerts.progress_todo }}{{ control.todo }}{{ site.data.alerts.progress_end }}
       </div>
-      <ul>
-        {{ control.content }}
-      </ul>
+        {{ content }}
   {% endfor %}
 {{ site.data.callout_end }}
 {% endfor %}

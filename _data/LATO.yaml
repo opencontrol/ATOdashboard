@@ -1,0 +1,1847 @@
+components:
+  18F:
+    components:
+      AC_Policy:
+        component_key: AC_Policy
+        documentation_complete: false
+        name: Access Control Policies for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      AT-Policy:
+        component_key: AT-Policy
+        documentation_complete: false
+        name: Security Awareness Training Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      AU-Policy:
+        component_key: AU-Policy
+        documentation_complete: false
+        name: Audit and Accountability Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      CA-Policy:
+        component_key: CA-Policy
+        documentation_complete: false
+        name: Security Assessment and Authorization Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      CICloudGov:
+        component_key: CICloudGov
+        documentation_complete: false
+        name: CI Cloud.Gov Concourse Pipeline
+        references: null
+        system_key: 18F
+        verifications:
+          CONCOURSE_PIPELINE:
+            name: CI Cloud.Gov Concourse Pipeline
+            path: https://ci.cloud.gov/pipelines/deploy-cf
+            type: URL
+      CM-Policy:
+        component_key: CM-Policy
+        documentation_complete: false
+        name: Configuration Management Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      CP-Policy:
+        component_key: CP-Policy
+        documentation_complete: false
+        name: Contingency Planning Policy for 18F
+        references:
+        - name: Policy Document
+          path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+          type: URL
+        system_key: 18F
+        verifications: null
+      ELKStack:
+        component_key: ELKStack
+        documentation_complete: false
+        name: ELKStack
+        references:
+        - name: Reference Name
+          path: https://www.elastic.co/webinars/introduction-elk-stack
+          type: URL
+        system_key: 18F
+        verifications: null
+      IA-Policy:
+        component_key: IA-Policy
+        documentation_complete: false
+        name: Identification and Authentication Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      IR-Policy:
+        component_key: IR-Policy
+        documentation_complete: false
+        name: Incident Response for 18F
+        references:
+        - name: Policy Document
+          path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+          type: URL
+        system_key: 18F
+        verifications: null
+      JumpBox:
+        component_key: JumpBox
+        documentation_complete: false
+        name: JumpBox
+        references: null
+        system_key: 18F
+        verifications: null
+      MA-Policy:
+        component_key: MA-Policy
+        documentation_complete: false
+        name: System Maintenance Policy for 18F
+        references:
+        - name: Policy Document
+          path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+          type: URL
+        system_key: 18F
+        verifications: null
+      MP-Policy:
+        component_key: MP-Policy
+        documentation_complete: false
+        name: Media Protection Policy for 18F
+        references:
+        - name: Policy Document
+          path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+          type: URL
+        system_key: 18F
+        verifications: null
+      PE-Policy:
+        component_key: PE-Policy
+        documentation_complete: false
+        name: Physical and Environmental Protection Policy for 18F
+        references: null
+        system_key: 18F
+        verifications: null
+      PL-Policy:
+        component_key: PL-Policy
+        documentation_complete: false
+        name: Security Planning Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      PS-Policy:
+        component_key: PS-Policy
+        documentation_complete: false
+        name: Personnel Security Policy for 18F
+        references:
+        - name: Policy Document
+          path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+          type: URL
+        system_key: 18F
+        verifications: null
+      RA-Policy:
+        component_key: RA-Policy
+        documentation_complete: false
+        name: Risk Assessment Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      SA-Policy:
+        component_key: SA-Policy
+        documentation_complete: false
+        name: System and Services Acquisition Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          DEPLOYMENT_TESTING:
+            name: Cloud Foundry Code Analysis
+            path: https://runtime.ci.cf-app.com/pipelines/cf-release?groups=cf-release
+            type: URL
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      SC-Policy:
+        component_key: SC-Policy
+        documentation_complete: false
+        name: System and Communications Protection Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          KEY_ROTATION:
+            name: Key Rotation Policy
+            path: https://github.com/18F/cg-docs/blob/master/content/ops/key-rotation.md
+            type: URL
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      SI-Policy:
+        component_key: SI-Policy
+        documentation_complete: false
+        name: System and Information Integrity Policy for 18F
+        references: null
+        system_key: 18F
+        verifications:
+          POLICY_DOC:
+            name: Policy Document
+            path: https://drive.google.com/drive/u/1/folders/0B6fPl5s12igNfnhnZWJqQVluNUxybWo5WVQwaHUwN29qRmVaQlczN0tpVUZEa25WZFdsTjg
+            type: URL
+      SecureProxy:
+        component_key: SecureProxy
+        documentation_complete: false
+        name: SecureProxy
+        references:
+        - name: Reference Name
+          path: https://github.com/18F/cg-secureproxy-boshrelease
+          type: URL
+        system_key: 18F
+        verifications: null
+    meta:
+      name: 18F policies
+      system_key: 18F
+  AWS:
+    components:
+      CloudCheckr:
+        component_key: CloudCheckr
+        documentation_complete: false
+        name: Cloud Checkr
+        references:
+        - name: Cloud Checkr Site
+          path: http://cloudcheckr.com/
+          type: URL
+        system_key: AWS
+        verifications: null
+      CloudFormation:
+        component_key: CloudFormation
+        documentation_complete: false
+        name: Cloud Formation
+        references:
+        - name: What is AWS CloudFormation?
+          path: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
+          type: URL
+        system_key: AWS
+        verifications: null
+      EC2:
+        component_key: EC2
+        documentation_complete: false
+        name: EC2
+        references:
+        - name: EC2 Documentation
+          path: https://aws.amazon.com/ec2/
+          type: URL
+        system_key: AWS
+        verifications: null
+      IAM:
+        component_key: IAM
+        documentation_complete: false
+        name: Identity and Access Management
+        references:
+        - name: AWS Identity and Access Management (IAM)
+          path: https://aws.amazon.com/iam/
+          type: URL
+        system_key: AWS
+        verifications: null
+      MultiFactor:
+        component_key: MultiFactor
+        documentation_complete: false
+        name: Multi-Factor Authentication
+        references:
+        - name: Multi-Factor Authentication Documentation
+          path: https://aws.amazon.com/iam/details/mfa/
+          type: URL
+        system_key: AWS
+        verifications: null
+      S3:
+        component_key: S3
+        documentation_complete: false
+        name: S3
+        references: null
+        system_key: AWS
+        verifications: null
+      VPC:
+        component_key: VPC
+        documentation_complete: false
+        name: Amazon Virtual Private Cloud
+        references:
+        - name: Amazon VPC
+          path: https://aws.amazon.com/vpc/
+          type: URL
+        system_key: AWS
+        verifications: null
+    meta:
+      name: AWS
+      system_key: AWS
+  CloudFoundry:
+    components:
+      ApplicationSecurityGroups:
+        component_key: ApplicationSecurityGroups
+        documentation_complete: false
+        name: Application Security Groups
+        references:
+        - name: ASG Documentation
+          path: https://docs.pivotal.io/pivotalcf/adminguide/app-sec-groups.html
+          type: URL
+        system_key: CloudFoundry
+        verifications:
+          ASG_LIST:
+            last_run: 2016-01-26 10:41:36.009750
+            name: Access Control Flow View Application Security Groups
+            test_passed: true
+            test_path: 'Feature: Access Control Flow Scenario: View Application Security
+              Groups'
+            type: TEST
+          ASG_OPEN_AND_CLOSED:
+            last_run: 2016-01-26 10:41:38.391335
+            name: Access Control Flow all
+            test_passed: true
+            test_path: 'Feature: Access Control Flow Scenario: all'
+            type: TEST
+      BOSH:
+        component_key: BOSH
+        documentation_complete: false
+        name: BOSH
+        references:
+        - name: Bosh source code
+          path: https://github.com/cloudfoundry/bosh
+          type: URL
+        - name: Bosh Documentation
+          path: https://bosh.io/docs
+          type: URL
+        system_key: CloudFoundry
+        verifications:
+          STATIC_CODE_ANALYSIS:
+            name: Bosh source code static analysis
+            path: https://codeclimate.com/github/cloudfoundry/bosh
+            type: URL
+      CloudController:
+        component_key: CloudController
+        documentation_complete: false
+        name: Cloud Controller
+        references: null
+        system_key: CloudFoundry
+        verifications:
+          CF_ROLES:
+            name: Cloud Controller Role Documentation
+            path: https://ocs.cloudfoundry.org/concepts/roles.html
+            type: URL
+          CF_ROLES_CODE:
+            name: Cloud Controller Role Implmentation
+            path: https://docs.cloudfoundry.org/concepts/roles.html
+            type: URL
+          CF_ROLES_CODE_SPECS:
+            name: Cloud Controller Role Implmentation Specs
+            path: https://github.com/cloudfoundry/cloud_controller_ng/blob/master/spec/unit/lib/cloud_controller/membership_spec.rb
+            type: URL
+          CRUD:
+            last_run: 2016-01-26 10:41:31.608962
+            name: Access Controls all
+            test_passed: true
+            test_path: 'Feature: Access Controls Scenario: all'
+            type: TEST
+          EVENTS_ENDPOINT:
+            name: CF Events Endpoint
+            path: https://apidocs.cloudfoundry.org/228/events/list_all_events.html
+            type: URL
+          LOG_TESTS:
+            last_run: 2016-01-26 10:41:32.121808
+            name: Audit and Accountability Content of Audit Records
+            test_passed: true
+            test_path: 'Feature: Audit and Accountability Scenario: Content of Audit
+              Records'
+            type: TEST
+          STATIC_CODE_ANALYSIS:
+            name: Cloud Controller source code static analysis
+            path: https://codeclimate.com/github/cloudfoundry/cloud_controller_ng
+            type: URL
+      DEA:
+        component_key: DEA
+        documentation_complete: false
+        name: DEA
+        references: null
+        system_key: CloudFoundry
+        verifications: null
+      Loggregator:
+        component_key: Loggregator
+        documentation_complete: false
+        name: Loggregator
+        references:
+        - name: Loggregator code
+          path: https://github.com/cloudfoundry/loggregator
+          type: URL
+        - name: Cloud Foundry Logging
+          path: https://docs.cloudfoundry.org/running/managing-cf/logging.html
+          type: URL
+        system_key: CloudFoundry
+        verifications: null
+      UAA:
+        component_key: UAA
+        documentation_complete: false
+        name: User Account and Authentication (UAA) Server
+        references:
+        - name: User Account and Authentication (UAA) Server
+          path: http://docs.pivotal.io/pivotalcf/concepts/architecture/uaa.html
+          type: URL
+        - name: Creating and Managing Users with the UAA CLI (UAAC)
+          path: http://docs.pivotal.io/pivotalcf/adminguide/uaa-user-management.html
+          type: URL
+        - name: UAA Roles
+          path: https://cf-p1-docs-prod.cfapps.io/pivotalcf/concepts/roles.html
+          type: URL
+        - name: Cloud Foundry Org Access
+          path: https://github.com/cloudfoundry/cloud_controller_ng/blob/master/spec/unit/access/organization_access_spec.rb
+          type: URL
+        - name: Cloud Foundry Space Access
+          path: https://github.com/cloudfoundry/cloud_controller_ng/blob/master/spec/unit/access/space_access_spec.rb
+          type: URL
+        system_key: CloudFoundry
+        verifications:
+          ACCOUNT_LOCKOUT:
+            last_run: 2016-01-26 10:41:30.033023
+            name: Access Controls Account Lockout (AC-7)
+            test_passed: true
+            test_path: 'Feature: Access Controls Scenario: Account Lockout (AC-7)'
+            type: TEST
+          CLOUDGOV_LOGIN_PAGE:
+            name: Cloud.gov Login Page
+            path: https://login.cloud.gov/login
+            type: URL
+      Warden:
+        component_key: Warden
+        documentation_complete: false
+        name: Warden
+        references: null
+        system_key: CloudFoundry
+        verifications: null
+    meta:
+      name: CloudFoundry
+      system_key: CloudFoundry
+name: LATO
+standards:
+  NIST-800-53:
+    AC-2:
+      justifications:
+      - component: AC_Policy
+        implementation_status: null
+        narrative:
+          a: 'The 18F Program identifies and selects the following types of information
+            system accounts to support organizational missions/business functions:
+
+            '
+          b: '18F has established designated Devops personnel as the assigned account
+            managers for all information system accounts relating to the infrastructure
+            and the Cloud.Gov platform.
+
+            System Owners, whose web applications and/or websites reside on the Cloud.Gov
+            platform have the responsibility to assign an account manager for their
+            information systems.
+
+            '
+          c: "18F establishes conditions for group and role membership within the\
+            \ Cloud.Gov Platform and its virtual environment.\nConditions for groups\
+            \ and roles membership are based on an established need to manage and\
+            \ access the virtual infrastructure and Cloud.Gov environments. The user\
+            \ must meet the following conditions in order for the System Owner/ Project\
+            \ Manager to approve a group membership request:\n* The user\u2019s assigned\
+            \ role is required to access a particular group\n* The user has the requirements\
+            \ and understanding to assume permissions associated with the group\n\
+            * The user has completed the security role-based training (18F Staff only)\n\
+            * The user complies with any other group-specific conditions created by\
+            \ the system owner\n\nOnce conditions have been met, the system owner\
+            \ /Project manager will request access within GitHub, 18F\u2019s tracking\
+            \ and ticketing system. Once approved, the 18F Devops group completes\
+            \ the request for group and role membership within its infrastructure\
+            \ and Cloud.Gov platform.\n"
+          d: 'The 18F Program Office specifies authorized users of the information
+            system, group and role membership, and access authorizations (i.e., privileges)
+            and other attributes (as required) for each account. Systems Owners/ Project
+            managers provide the details of what type of access is needed for an authorized
+            authorized user.
+
+            All accounts will be documented within their respective information systems,
+            detailing their group and role membership, and access authorizations.
+            This documentation will be exported by Devops and archived for up to a
+            year from the date of account creation by the managing 18F project lead
+            and Cloud.Gov Technical Point of Contact (Operating Environment) in accordance
+            with best business and security practices.
+
+            '
+          e: '18F requires approvals by the project lead and system owners for requests
+            to create information system accounts. All accounts will be documented
+            within the Github ticketing and tracking system with their respective
+            information systems, detailing their group, role membership, and access
+            authorizations.
+
+            '
+          f: 'User account establishment, activation, modification, disablement or
+            removal requires approval by the managing  project lead and Cloud.Gov
+            Information System Technical Point of Contact
+
+            Accounts will be created, enabled, modified, disabled, and removed from
+            AWS in accordance with 18F policies, guidelines and established by the
+            project lead and Devops.
+
+            '
+          g: '18F Monitors the use of all information system accounts within its environment.
+
+            '
+          h: "18F notifies its Devops account managers, when accounts are no longer\
+            \ required, users are terminated or transferred, and when individual\u2019\
+            s information system usage or need-to-know changes within the Cloud.Gov\
+            \ platform and virtual private cloud infrastructure.\nThe project manager\
+            \ or information system owner will be notified when accounts have been\
+            \ terminated, disabled or transferred based on the access request submitted\
+            \ via Github.  Notification will be sent via e-mail or the GitHub ticketing\
+            \ and tracking system when changes to user and system access occur.\n"
+          i: "18F authorizes access to its information systems based on a valid access\
+            \ authorization from system owners and Devops, intended system usage within\
+            \ the network environment, and other attributes as required by the organization\
+            \ or associated missions/business functions. This is documented within\
+            \ section 3 of  the 18F access control policy Access Management.\nUser\
+            \ and system access is provided only to those with an established need\
+            \ to access and manage the virtual private cloud and Cloud.Gov environments.\n\
+            * User group membership is restricted to the least privilege necessary\
+            \ for the user to accomplish their assigned duties.\n* All user accounts\
+            \ are issued only to those who have gained approval by 18F Devops. Once\
+            \ approved, the Devops team creates the user account and adds it to the\
+            \ appropriate role and organization within its information systems.\n\
+            18F grants access to the information system based on:\n  * a valid need-to-know/need-to-share\
+            \ that is determined by assigned official duties and satisfying all personnel\
+            \ security criteria\n  * Intended system usage. 18F requires proper identification\
+            \ for requests to establish information system accounts and approves all\
+            \ such requests Organizational or mission/business function attributes.\n"
+          j: '18F reviews user and system accounts for compliance with account management
+            requirements at least on an annual basis.  Currently, system and user
+            accounts are being monitored manually on a monthly basis and programmatically
+            on a continuous basis.
+
+            '
+          k: '18F establishes a process for reissuing shared/group account credentials
+            when individuals are removed from the group. 18F utilizes its GitHub tracking
+            and ticketing system for requests to reissue and remove individuals from
+            group memberships within its environment.
+
+            '
+        references:
+        - component: AC_Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      - component: ELKStack
+        implementation_status: null
+        narrative:
+          g: 'The UAA API interface is used to monitor privileged/non privileged user
+            accounts within the Cloud.Gov It list Cloud Foundry instance users. By
+            default it returns information about each user account including GUID,
+            name, permission groups, activity status, and metadata.
+
+            18F uses the ELK stack to provide a visual way to monitor all user and
+            system accounts within Coud.Gov by interfacing with Cloud.Gov API calls
+            to its internal system components (i.e. Loggregator, Cloud Controller,
+            DEA, Warden, Metrics Collector)
+
+            '
+        system: 18F
+      - component: CloudCheckr
+        implementation_status: null
+        narrative:
+          j: User accounts will be monitored monthly and accounts will be disabled
+            after 90 days of inactivity; this will be a manual review process every
+            30 days. 18F is in the process of automating this account management process
+            through the use of implementing AWS OSQuery to trigger alerts when user
+            accounts are inactive of a 90-day period.
+        system: AWS
+      - component: IAM
+        implementation_status: null
+        narrative:
+          a: "AWS accounts are managed through AWS Identity and Access Management\
+            \ (IAM). Only users with a need to operate the AWS management console\
+            \ are provided individual AWS user accounts. The following types are used:\n\
+            \  * User \u2013 Individual IAM accounts\n  * System \u2013 system and\
+            \ application account not used for interactive access\nThere are no guest/anonymous,\
+            \ groups, or temporary user accounts in the 18F Environment\n"
+          k: '18F does not allow shared/group account credentials within the AWS environment.
+            All users have individual accounts to access the AWS environment. 18F
+            has created specific policies that allow individual users to assume a
+            role within the AWS environment.
+
+            '
+        system: AWS
+      - component: CloudController
+        implementation_status: null
+        narrative:
+          a: 'Cloud Foundry user and role accounts are managed and maintained through
+            the Cloud Controller. Cloud Foundry uses role-based access control with
+            each role granting permissions in either an organization or an application
+            space. The Following types are used:
+
+            * Org Manager
+
+            * Org Auditor
+
+            * Space Manager
+
+            * Space Developer
+
+            * Space Auditor
+
+            '
+        references:
+        - component: CloudController
+          system: CloudFoundry
+          verification: CF_ROLES
+        - component: CloudController
+          system: CloudFoundry
+          verification: CF_ROLES_CODE
+        - component: CloudController
+          system: CloudFoundry
+          verification: CF_ROLES_CODE_SPECS
+        system: CloudFoundry
+      - component: UAA
+        implementation_status: null
+        narrative:
+          j: '# TODO
+
+            User accounts will be monitored monthly and accounts will be disabled
+            after 90 days of inactivity; this will be a manual review process every
+            30 days, but the disablement will be automatic.
+
+            A manual review of all user accounts will be conducted on an annual basis
+
+            '
+          k: 'Cloud.Gov utilizes role based access controls (RBAC) for group membership
+            within the platform and does not issue shared/group account credentials.
+
+            '
+        system: CloudFoundry
+      meta:
+        family: AC
+        name: Account Management
+    AC-3:
+      justifications:
+      - component: AC_Policy
+        implementation_status: null
+        narrative: "18F information systems enforces approved authorizations for logical\
+          \ access to information and system resources in accordance with the 18F\
+          \ access control policy Section 3 Access Enforcement which states:\n  *\
+          \ 18F must enforce approved authorizations for logical access to its information\
+          \ systems in accordance with all applicable Federal, and 18F policies.\n\
+          \  * 18F must provide access enforcement through the use of access control\
+          \ lists, access control matrices, cryptography) to control access between\
+          \ users (or processes acting on behalf of users) and objects (e.g., devices,\
+          \ files, records, processes, programs, domains) in the information system.\n\
+          \  * 18F must employ access enforcement mechanisms at the application level,\
+          \ when necessary, to provide increased information security for the organization.\n"
+        references:
+        - component: AC_Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      - component: IAM
+        implementation_status: null
+        narrative: "18F follows best practices by implementing the majority of the\
+          \ following:\n  - Create individual accounts for anyone that requires access\
+          \ to the virtual infrastructure or APIs or use IAM federation from enterprise\
+          \ identity management system\n  - Use groups or roles to assign permissions\
+          \ to IAM users and Cloud.gov\n  - Enable multi factor authentication for\
+          \ all IAM users\n  - Use roles for applications that run on EC2 instances\n\
+          \  - Delegate by using roles instead of sharing credentials\n  - Rotate\
+          \ credentials regularly\n  - Store SSH keys securely to prevent disclosure,\
+          \ and promptly replace lost or compromised keys.\n"
+        system: AWS
+      - component: ApplicationSecurityGroups
+        implementation_status: null
+        narrative: '18F has created specific Cloud.Gov security groups associated
+          with VPCs to provide full control over inbound and outbound traffic. 18F
+          has created a specific set of VPCs (Live production and staging) for its
+          Cloud.Gov implementation.  All VPCs have subnets used to separate and control
+          IP address space within each individual VPC.  Subnets must be created in
+          order to launch Availability Zone (AZ) specific services within a VPC. 18F
+          has setup VPC Peering between the Staging VPC and the CF Live production
+          VPC.
+
+          '
+        system: CloudFoundry
+      - component: UAA
+        implementation_status: null
+        narrative: "18F follows best practices by implementing the majority of the\
+          \ following:\n  - Use RBAC model to restrict users\u2019 access to only\
+          \ what is necessary to complete their tasks.\n  - Use a strong passphrase\
+          \ for both Cloud.gov user account and SSH keys.\n  - Configure UAA clients\
+          \ and users using a BOSH manifest. Limit and manage these clients and users\
+          \ as you would any other kind of privileged account.\n"
+        system: CloudFoundry
+      meta:
+        family: AC
+        name: Access Enforcement
+    AC-6:
+      justifications:
+      - component: AC_Policy
+        implementation_status: null
+        narrative: 'IAM policies are attached to the users, enabling centralized control
+          of permissions for users under 18F AWS Account to access services, buckets
+          or objects. With IAM policies, 18F only grant users within its own AWS account
+          permission to access its Amazon resources.
+
+          18F AWS IAM policies are defined to grant only the required access for 18F
+          staff necessary to perform their functions. 18F defines least privilege
+          access to each user, group or role.
+
+          Security functions within the AWS infrastructure are explicitly defined
+          within IAM to include read-only permissions for any user functions.
+
+          18F incorporate running the IAM Policy Simulator to test policies for least
+          privilege access for users and groups.
+
+          '
+        references:
+        - component: AC_Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      - component: IAM
+        implementation_status: null
+        narrative: 'IAM policies are attached to the users, enabling centralized control
+          of permissions for users under 18F AWS Account to access services, buckets
+          or objects. With IAM policies, 18F only grant users within its own AWS account
+          permission to access its Amazon resources.
+
+          18F AWS IAM policies are defined to grant only the required access for 18F
+          staff necessary to perform their functions. 18F defines least privilege
+          access to each user, group or role.
+
+          Security functions within the AWS infrastructure are explicitly defined
+          within IAM to include read-only permissions for any user functions.
+
+          18F incorporate running the IAM Policy Simulator to test policies for least
+          privilege access for users and groups.
+
+          '
+        system: AWS
+      - component: CloudController
+        implementation_status: null
+        narrative: 'Cloud.Gov uses feature flags which allows an administrator to
+          turn on or off sub-sections, or features, of an application without deploying
+          new code.
+
+          18F uses Orgs, Spaces, and Roles to implement least privileged access to
+          the platform as a service. Cloud.Gov uses role-based access control (RBAC),
+          with each role granting permissions in either an org or a space.
+
+          '
+        references:
+        - component: CloudController
+          system: CloudFoundry
+          verification: CF_ROLES
+        - component: CloudController
+          system: CloudFoundry
+          verification: CF_ROLES_CODE
+        - component: CloudController
+          system: CloudFoundry
+          verification: CF_ROLES_CODE_SPECS
+        system: CloudFoundry
+      meta:
+        family: AC
+        name: Least Privilege
+    AU-2:
+      justifications:
+      - component: AU-Policy
+        implementation_status: null
+        narrative:
+          b: 'Audit logs will be made available to organizations for mutual support
+            in response to security breaches, system and user access, incident reporting
+            and continuous monitoring.
+
+            18F will generate and distribute audit reports, provide customized dashoard
+            access for audited events, and send audit log data to SIEM and log analysis
+            systems from its  audit logging and metrics tools for the Cloud.Gov platform
+            and virtual infrastructure as needed.
+
+            '
+          c: '18F retains audit logs according to NARA retention standards to provide
+            support for after-the-fact investigations of security incidents and to
+            meet regulatory and organizational information retention requirements.
+
+            The log management framework will provide the capability to retain logs
+            for 90 days online and one-year offline, with sufficient capacity as to
+            mitigate the risk of exceeding storage space.
+
+            Specific Policies, Procedures, Points of Contact, and Guidance will be
+            established between 18F and other agencies to support after-the-fact investigations,
+            by the 18F Project Lead.
+
+            '
+        system: 18F
+      - component: ELKStack
+        implementation_status: null
+        narrative:
+          a: 'Cloud.Gov provides an audit trail through the bosh tasks command. This
+            command shows all actions that an operator has taken with the platform.
+            Additionally, operators can redirect Cloud Foundry component logs to a
+            Logstash syslog server using the syslog_daemon_config property in the
+            metron_agent job of cf-release.
+
+            For end users, Cloud.Gov records an audit trail of all relevant API invocations
+            of and app. The CLI command cf events returns this information.
+
+            '
+        system: 18F
+      - component: CloudCheckr
+        implementation_status: null
+        narrative:
+          d: "18F has implemented Cloudtrail and Cloudwatch for its account and system\
+            \  monitoring. It provides visibility into user activity by recording\
+            \ API calls made on an AWS account. CloudTrail captures and records important\
+            \ information about each API call for the list of audtiable events:\n\
+            * User \u2013 the IAM user name of the person who was interacting with\
+            \ your AWS account.\n* IP Address \u2013 the IP Address where the interactions\
+            \ originated from.\n* Event Name \u2013 the type of interaction that occurred.\n\
+            * Service \u2013 the AWS Service that was interacted with.\n* Time \u2013\
+            \ the date and time that the event occurred.\n* Region \u2013 the AWS\
+            \ Region(s) where the interactions occurred.\n* Resource ID \u2013 the\
+            \ resource ID from the event.\n"
+        system: AWS
+      - component: Loggregator
+        implementation_status: null
+        narrative:
+          a: 'Cloud.Gov provides an audit trail through the bosh tasks command. This
+            command shows all actions that an operator has taken with the platform.
+            Additionally, operators can redirect Cloud Foundry component logs to a
+            Logstash syslog server using the syslog_daemon_config property in the
+            metron_agent job of cf-release.
+
+            For end users, Cloud.Gov records an audit trail of all relevant API invocations
+            of and app. The CLI command cf events returns this information.
+
+            '
+          b: 'Cloud.Gov provides an audit trail through the bosh tasks command. This
+            command shows all actions that an operator has taken with the platform.
+            For users, Cloud Foundry records an audit trail of all relevant API invocations
+            of and app. The CLI command cf events returns this information.
+
+            Loggregator, the component responsible for logging, provides a stream
+            of log output from 18F applications and system components that interact
+            with a hosted app during updates and execution.
+
+            '
+        system: CloudFoundry
+      meta:
+        family: AU
+        name: Audit Events
+    AU-6:
+      justifications:
+      - component: AU-Policy
+        implementation_status: null
+        narrative:
+          a: 'AWS Auditable Events:
+
+            DevOps and SecOps teams will conduct weekly manual and automated continuous
+            audits of authorized accounts and configurations. These audits will include
+            but are not limited to:
+
+            Administrative Accounts
+
+            * Virtual Private Cloud (VPC)
+
+            * Elastic Compute Cloud (EC2)
+
+            * Simple Storage Service (S3)
+
+            * Identity and Access Management (IAM)
+
+            * Elastic Block Store (EBS)
+
+
+
+            Cloud Foundry Auditable Events:
+
+            By default, Loggregator streams logs to a terminal. 18F will drain logs
+            to a third-party log management service such as ELK and AWS CloudTrail
+
+            Cloud Foundry logs are captured in multiple tables and log files. These
+            will be reviewed weekly and if discovery of anomalous audit log content
+            which appears to indicate a breach are handled according to the GSA Security
+            Incident Handling Guide: CIO IT Security 01-02 Revision 7 (August 18,
+            2009) requirements.
+
+            '
+          b: 'When a credible source to the GSA Agency provides information that causes
+            reason to enhance audit activities, develop and implement an enhanced
+            auditing use-case that will adequately enhance auditing practices in a
+            fashion necessary per the identified threat and following the Incident
+            Reporting Procedures in GSA IT Security Procedural Guide 01-02 (04/07/2015),
+            Incident Response. The GSA Agency may also, through analysis pertaining
+            to the GSA Agency environment provide additional audit measures that will
+            require an increase in review, analysis, and reporting for a necessary.
+
+            Upon implementation, 18F will monitor information security news and alerts
+            for indications of a need to heighten information system security monitoring.
+
+            '
+        references:
+        - component: AU-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      meta:
+        family: AU
+        name: Audit Review, Analysis, and Reporting
+    CA-8:
+      justifications:
+      - component: CA-Policy
+        implementation_status: null
+        narrative: "\nAWS/Cloud Foundry  Penetration Testing:\nExternal Penetration\
+          \ testing\nExternal penetration testing activities are conducted by GSA\
+          \ OCISO on an annual basis. These activites are designed to perform the\
+          \ necessary vulnerability analysis against the Cloud Foundry System based\
+          \ on all necessary security requirements. The GSA OCISO follows the GSA\
+          \ CIO IT Security Procedural Guide, CIO-IT Security-11-51, Conducting Penetration\
+          \ Test Exercises when performing these tests.\nFor external public facing\
+          \ penetration testing, 18F must request permission from AWS using the AWS\
+          \ Vulnerability / Penetration Testing Request Form to conduct penetration\
+          \ test activities against its own Virtual Private Cloud infrastructure and\
+          \ follow the AWS Acceptable Use Policy.\nAmazon requires customers to obtain\
+          \ authorization for penetration testing (or vulnerability assessments) both\
+          \ from or to their AWS resources.\nAWS Acceptable Use Policy, http://aws.amazon.com/aup/\n\
+          AWS Penetration testing,  http://aws.amazon.com/security/penetration-testing/\n\
+          \nISE performs penetration testing services for the information systems.\
+          \ It is also bound by the AWS penetration testing policy and procedures.\n\
+          \nInternal Penetration testing\nFor internal penetration testing inside\
+          \ 18 F's Virtual Private Cloud, 18F team members will conduct authenticated\
+          \ vulnerability scans using Nessus,, whitebox/greybox testing of the 18F\
+          \ environment using AWS friendly and approved assessment tools.\nFor compliance\
+          \ with NIST Publication 800-53 CA-8, Parameter 1 Penetration Testing of\
+          \ all 18F Infrastructure and Application Components will occur annually.\
+          \ Parameter 2 Penetration Testing of Publicly Accessible Infrastructure\
+          \ will be performed on the direction of the GSA ISSO.\n18F will use GSA\
+          \ CIO-IT Security 11-51  rev 2\u201D Conducting Penetration Test exercises\u201D\
+          \ procedural guide as a reference\n"
+        references:
+        - component: CA-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      meta:
+        family: CA
+        name: Penetration Testing
+    CM-2:
+      justifications:
+      - component: CloudFormation
+        implementation_status: null
+        narrative: 'DevOps maintain baseline configurations for VPC, EBS, EC2 instances
+          and AMIs. AWS Cloud Formation templates help 18F maintain a strict configuration
+          management scheme of the cloud infrastructure. If an error or misconfiguration
+          of the infrastructure or associated security mechanism (security groups,
+          NACLs) is detected, the administrators can analyze the current infrastructure
+          templates; compare with previous versions, and redeploy the configurations
+          to a known and approved state.
+
+          AWS Cloud Formation templates are the approved baseline for all changes
+          to the infrastructure and simplify provisioning and management on AWS. They
+          provide an automated method to assess the status of an operational infrastructure
+          against an approved baseline.
+
+          Linux instances are based on the standard AWS AMI images with configuration
+          to GSA requirements based on secure configurations documented in CM-6.
+
+          DevOps maintain copies of the latest Production Software Baseline, which
+          includes the following elements: Manufacturer, Type, Version number, Software,
+          Databases, and Stats.
+
+          '
+        system: AWS
+      - component: BOSH
+        implementation_status: null
+        narrative: "18F utilizes the Cloud Foundry Secure Deployment best practices\
+          \ which include the following:\nConfigure UAA clients and users using a\
+          \ standard BOSH manifest for cloud Foundry Deployment. Limit and manage\
+          \ these clients and users as you would any other kind of privileged account.\n\
+          Deploy within a VPC that limits network traffic to individual VMs. This\
+          \ reduces the possibility of unauthorized access to the VMs within your\
+          \ BOSH-managed cloud.\nEnable HTTPS for applications and SSL database connections\
+          \ to protect sensitive data transmitted to and from applications.\nEnsure\
+          \ that the jumpbox is secure, along with the load balancer and NAT VM.\n\
+          Encrypt stored files and data within databases to meet data security requirements.\
+          \ Deploy using industry standard encryption and the best practices for your\
+          \ language or framework.\nProhibit promiscuous network interfaces on the\
+          \ trusted network.\nReview and monitor data sharing and security practices\
+          \ with third-party services that you use to provide additional functionality\
+          \ to your application.\nStore SSH keys securely to prevent disclosure, and\
+          \ promptly replace lost or compromised keys.\nUse Cloud Foundry\u2019s RBAC\
+          \ model to restrict users\u2019 access to only what is necessary to complete\
+          \ their tasks.\nUse a strong passphrase for both Cloud Foundry user account\
+          \ and SSH keys.\n\nStore SSH keys securely to prevent disclosure, and promptly\
+          \ replace lost or compromised keys.\nUse Cloud Foundry\u2019s RBAC model\
+          \ to restrict users\u2019 access to only what is necessary to complete their\
+          \ tasks.\nUse a strong passphrase for both Cloud Foundry user account and\
+          \ SSH keys.\n\nFor further information regarding Cloud Foundry best practices\
+          \ please refer to:\nhttps://docs.cloudfoundry.org/devguide/deploy-apps/prepare-to-deploy.html\n\
+          https://docs.cloudfoundry.org/concepts/security.html\n"
+        system: CloudFoundry
+      meta:
+        family: CM
+        name: Baseline Configuration
+    CM-3:
+      justifications:
+      - component: CM-Policy
+        implementation_status: null
+        narrative:
+          a: 'All Configuration Change control:
+
+            18F provisions its infrastructure with AWS CloudFormation, the AWS CloudFormation
+            template describes exactly what resources are provisioned and their settings.
+            Because these templates are text files, 18F can simply track differences
+            in these templates to track changes to its infrastructure, similar to
+            the way developers control revisions to source code.
+
+            18F uses version control systems with its cloud formation templates to
+            know exactly what changes were made, who made them, and when. If at any
+            point 18F needs to reverse changes to infrastructure, you can use a previous
+            version of a template.
+
+            18F uses GitHub for additional tracking and documenting of authorized
+            changes within the infrastructure and applications including Cloud Foundry
+            platform as a service. Within  GitHub, a diff function is used to compare
+            and contrast any changes made to configurations of Cloud Foundry.
+
+            '
+          b: '18F reviews proposed configuration-controlled changes to all of its
+            information systems and infrastructure and approves or disapproves such
+            changes with explicit consideration for security impact analysis within
+            the Virtual Private Cloud environment. All reviews and approvals are conducted
+            within 18Fs GitHub ticketing and tracking system.
+
+            '
+          c: "18F uses the following methods to document configuration change decisions\
+            \ associated with its information systems.\nFor changes related to the\
+            \ its virtual infrastructure, 18F uses VisualOps and Cloud Checkr for\
+            \ real-time configuration changes which are documented, approved and tracked\
+            \ within GitHub.\nAll Cloud Foundry configuration changes are documented,\
+            \ approved and tracked within 18 F\u2019s GitHub site.\nAll configuration\
+            \ changes related to applications and websites hosted within the 18F AWS\
+            \ and Cloud Foundry environment are requested by the systems owner and\
+            \ approved by DevOps within the 18F GitHub tracking systems.\n"
+          d: 'When configuration changes have been approved through 18F''s GitHub
+            ticketing and tracking system, the DevOps team implements approved configuration-controlled
+            changes to the information system and then provides a status of the changes
+            completed and closes out the ticket.
+
+            '
+          e: 'Records of configuration-controlled changes are retained for at least
+            1 year in accordance with the 18F Configuration Management policy and
+            utilizing the 18F GitHub site and S3 to store all changes requested, approved,
+            disapproved, implemented and pending.
+
+            '
+          f: 'Audits for the virtual infrastructure and Cloud Foundry platform as
+            a service and applications are conducted by DevOps, ISSOs and Cloud Foundry
+            project manager of all configuration-controlled changes to the information
+            system.  These audits take place no less than once a month and are documented
+            in the GitHub ticketing and tracking system, per the 18F Configuration
+            management policy Section 3 which states
+
+            18F will conduct a monthly audit of information system which identifies
+            and eliminates unnecessary functions, ports, protocols, and/or services.
+
+            '
+          g: '18F coordinates and provides oversight for configuration change control
+            activities through its GitHub tracking and ticketing systems and Slack
+            communications channel which is integrated with GitHub that convenes whenever
+            there are significant and pending changes to the 18F security, cloud infrastructure
+            and applications.
+
+            '
+        references:
+        - component: CM-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      - component: CloudCheckr
+        implementation_status: null
+        narrative:
+          c: "For changes related to the virtual infrastructure, 18F uses VisualOps\
+            \ and Cloud Checkr for real-time configuration changes which are documented,\
+            \ approved and tracked within GitHub. All Cloud Foundry configuration\
+            \ changes are documented, approved and tracked within 18 F\u2019s GitHub\
+            \ site.\n"
+        system: AWS
+      - component: CloudFormation
+        implementation_status: null
+        narrative: '- 18F provisions its infrastructure with AWS CloudFormation, the
+          AWS CloudFormation template describes exactly what resources are provisioned
+          and their settings. Because these templates are text files, 18F can simply
+          track differences in these templates to track changes to its infrastructure,
+          similar to the way developers control revisions to source code.
+
+          - 18F uses several version control systems(i.e. AWS Config, AWS Service
+          Catalog) with its templates to know exactly what changes were made, who
+          made them, and when. If at any point 18F needs to reverse changes to infrastructure,
+          you can use a previous version of a template.
+
+          '
+        system: AWS
+      meta:
+        family: CM
+        name: Configuration Change Control
+    CM-6:
+      justifications:
+      - component: CM-Policy
+        implementation_status: null
+        narrative:
+          a: '18F uses established and documents configuration settings for its information
+            technology products employed within the Cloud Foundry platform that reflect
+            the most restrictive mode consistent with operational requirements. 18F
+            follows industry best practices and guidance provided in NIST Special
+            Publication 800-70, Security Configuration Checklist Program for IT Products
+
+            Infrastructure documented configuration settings:
+
+            DevOps and Security Engineers maintain the baseline configuration for
+            VPC, EBS and AMIs.  Best practices, FISMA compliant AMIs, and hardened
+            cloud formation templates are utilized as there are no benchmarks available.
+            18F uses the following approved FISMA ready baselines located at https://github.com/fisma-ready
+
+            Cloud Foundry documented configuration settings:
+
+            18F follows Cloud Foundry best practices for configuring and implementing
+            the platform as a service. Configuration settings are documented within
+            the deployment manifest on the GitHub and Cloud Foundry websites. The
+            following are approved baseline configuration settings related to the
+            Cloud Foundry platform as a service. All documented configuration settings  related
+            to Cloud Foundry are located  at https://docs.18f.gov/ops/repos/.
+
+            '
+          b: '18F Implements the configuration settings based on its documented process
+            and practices. DevOps implements the configuration benchmarks identified
+            in Part a, maintains the baseline configuration for all cloud infrastructure
+            and Cloud Foundry components and is responsible for ensuring all systems
+            are configured in accordance with applicable hardening guides.
+
+            '
+          c: 'DevOps documents any exceptions to established baseline configurations
+            for all of 18F''s virtual infrastructure and information systems. 18F
+            maintains exception documents which detail specific items from the established
+            configuration settings which cannot be applied to instances due to operational
+            requirements.
+
+            '
+          d: '18F Monitors and controls changes to the configuration settings in accordance
+            with its documented configuration management policy and procedures.
+
+            All Configuration Change Control:
+
+            DevOps and 18F system owners maintain the baseline configurations within
+            18F Virtual Private Cloud. Configuration will be reviewed in real-time
+            using automated methods and at least quarterly to ensure no unauthorized
+            changes were made to the baseline configuration.
+
+            Internal vulnerability scans are performed at least on a quarterly basis
+            in the event that no enhancements or upgrades are performed.
+
+            '
+        references:
+        - component: CM-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      meta:
+        family: CM
+        name: Configuration Settings
+    CM-8:
+      justifications:
+      - component: CM-Policy
+        implementation_status: null
+        narrative: '18F posts its current inventory of information systems on its
+          dashboard located at  https://18f.gsa.gov/dashboard/. Several sources are
+          used to capture complete inventories of the virtual infrastructure and its
+          information systems while providing the level of granularity deemed necessary
+          for tracking and reporting. The AWS Management Console, VisualOps, Cloud
+          Checkr, Github, and Nexpose are used to provide additional enumeration capabilities.
+
+          Cloud Checkr is currently deployed to facilitate asset management, along
+          with other operations activities, on a real-time ongoing basis. Components
+          deployed in the virtual infrastructure are accurately inventoried and can
+          be filtered to a specific informaton system groups as well as a group of
+          web services or  those components that are related to a spcecific informaton
+          system.
+
+          The VisualOps Cloud management tool is used to provide a visual, real-time
+          and automated representation of the virtual infrastructure and applications
+          within the 18F environment. It also provides a global view of the 18F AWS
+          account where all regions and services can be seen in one place.
+
+          The 18F GitHub respository also is used to show a current lists of components
+          that make up the Cloud.Gov inventory. It is located at https://docs.cloud.gov/ops/repos/
+
+          Nexpose maintains an inventory of all assests scanned within the 18F virtual
+          Private Cloud. This includes all information system within the VPCs and
+          compleoents within the Cloud.Gov platform as a service.
+
+          SecOps and DevOps reviews and updates the information system component inventory
+          on a monthly basis and updates the inventory of information system whenever
+          installations, removals, and other changes are made. 18F will verify that
+          all components within the authorized boundary of the information system
+          are either inventoried as part of the system or recognized by another system
+          as a component within that systems inventory.
+
+          '
+        references:
+        - component: CM-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      meta:
+        family: CM
+        name: Information System Component Inventory
+    IA-2:
+      justifications:
+      - component: IAM
+        implementation_status: null
+        narrative: 'All users have individually unique identifiers to access and authenticate
+          to the AWS environment through the AWS management console. 18F AWS IAM users
+          are placed into IAM roles based on their assigned roles and permissions
+
+          Additional temporary permission are delegated with the IAM roles usually
+          for applications that run on EC2 Instances in order to access AWS resources
+          All user accounts for 18F staff are maintained within the 18F AWS Environment.
+
+          Shared or group authenticators are not utilized, Service accounts are implemented
+          as Managed Services Accounts within AWS.
+
+          '
+        system: AWS
+      - component: UAA
+        implementation_status: null
+        narrative: 'The UAA is the identity management service for Cloud Foundry.
+          Its primary role is as an OAuth2 provider, issuing tokens for client applications
+          to use when they act on behalf of Cloud Foundry users. In collaboration
+          with the login server, it authenticates users with their Cloud Foundry credentials,
+          and act as a Single Sign-On (SSO) service using those credentials (or others).
+          It has endpoints for managing user accounts and for registering OAuth2 clients,
+          as well as various other management functions.
+
+          All users have individually unique identifiers to access and authenticates  to
+          the environment. Shared or group authenticators are not utilized, with the
+          exception of a root administrative account. There are only two authorized
+          users from the DevOps team who has access to the root administrative account.
+
+          '
+        system: CloudFoundry
+      meta:
+        family: IA
+        name: Identification and Authentication (Organizational Users)
+    IA-2 (1):
+      justifications:
+      - component: JumpBox
+        narrative: 'Cloud.Gov currently does not have MFA capabilities implemented
+          for users; however, any administrative actions taken on the platform requires
+          authentication via encrypted ssh keys which are limited to specific users
+          on the jumpbox.
+
+          '
+        system: 18F
+      - component: MultiFactor
+        narrative: 'AWS multifactor authentication (MFA) for privileged users of the
+          AWS console is implemented. This service has been configured for 18F administrative
+          accounts in IAM. Multifactor authentication adds an extra layer of security
+          for login access to the AWS management console. 18F users are prompted for
+          a username and password, as well as the authentication code from their MFA
+          device.
+
+          '
+        system: AWS
+      - component: UAA
+        implementation_status: null
+        narrative: 'Cloud.Gov does not have MFA capabilities implemented. Cloud.Gov
+          currently utilizes username and password for identification and authentication
+          of non-privileged accounts.
+
+          '
+        system: CloudFoundry
+      meta:
+        family: IA
+        name: Identification and Authentication (Organizational Users) | Network Access
+          to Privileged Accounts
+    IA-2 (12):
+      justifications:
+      - component: UAA
+        implementation_status: null
+        narrative: 'PIV card access is Not applicable for the Cloud Foundry PaaS
+
+          '
+        system: CloudFoundry
+      meta:
+        family: IA
+        name: Identification and Authentication (Organizational Users) | Acceptance
+          of PIV Credentials
+    IA-2 (2):
+      justifications:
+      - component: MultiFactor
+        narrative: 'AWS multi-factor authentication (MFA) for non-privileged users
+          of the AWS console is implemented. With MFA enabled, all users are prompted
+          for a username and password, as well as the authentication code from their
+          MFA device.
+
+          '
+        system: AWS
+      meta:
+        family: IA
+        name: Identification and Authentication (Organizational Users) | Network Access
+          to Non-Privileged Accounts
+    PL-8:
+      justifications:
+      - component: PL-Policy
+        implementation_status: null
+        narrative:
+          a: '18F has developed the system security plan (SSP) for Cloud Foundry PaaS
+            containing the information security architecture for the information system
+            that:
+
+            Describes the overall philosophy, requirements, and approach to be taken
+            with regard to protecting the confidentiality, integrity, and availability
+            of organizational information
+
+            Describes how the information security architecture is integrated into
+            and supports the enterprise architecture
+
+            Describes any information security assumptions about, and dependencies
+            on, external services
+
+            '
+          b: '18F Reviews and updates the information security architecture within
+            the System Security plans and the 18F GitHub repository on an annual basis
+            or when a significant change takes place to reflect updates in the enterprise
+            architecture.
+
+            Due to the dynamic and elastic nature of cloud computing,  18F monitors
+            real-time updates of its information security architecture using its infrastructure
+            management  and visual security consoles.
+
+            '
+          c: '18F ensures that planned information security architecture changes are
+            reflected in the security plan and organizational procurements/acquisitions.
+
+            18F follows the risk management framework (RMF) which includes conducting
+            annual risk assessments for its information systems and infrastructure.
+            Any changes are then updated in systems security plans, plan of actions
+            and milestones POA&Ms, security assessment reports (SAR)
+
+            '
+        references:
+        - component: PL-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      meta:
+        family: PL
+        name: Information Security Architecture
+    RA-5:
+      justifications:
+      - component: RA-Policy
+        implementation_status: null
+        narrative:
+          a: '18F Conducts monthly Operating System (OS) and web application scanning;
+            quarterly database scanning; and, OS and Web application scanning with
+            every code release. 18F conducts internal vulnerabilty scanning of its
+            VPC and private subnets within the 18F Virtual Private Cloud.
+
+            '
+          b: '18F vulnerabilty scanning toos utilize techniques that promote interoperability
+            such as Common Vulnerability Scoring System v2 (CVSS2), Common Platform
+            Enumeration (CPE), and Common Vulnerability Enumeration (CVE) and OWASP
+            TOP 10 vulnerabilities.
+
+            '
+          c: '18F Analyzes vulnerability scan reports from its vulnerabilty scanning
+            tools assessments at least weekly and appropriate actions taken on discovery
+            of vulnerabilities within the 18F Cloud Infrastructure and applications
+            and from security control assessments conducted on its information systems.
+
+            '
+          d: 'High-risk vulnerabilities are mitigated within thirty days (30); moderate
+            risk vulnerabilities mitigated within ninety days (90). If the recommended
+            steps will adversely impact functionality or performance, the ISSO/ISSM
+            will reviews changes and mitigating controls with 18F DevOps as well as
+            the Cloud Foundry system owners.
+
+            '
+          e: '18F shares information obtained from the vulnerability scanning process
+            and security control assessments with designated System Owners, DevOPs,
+            GSA SecOps, ISSM and the Authorizing Official (AO) to help eliminate similar
+            vulnerabilities in other information systems (i.e., systemic weaknesses
+            or deficiencies).
+
+            '
+        references:
+        - component: RA-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      meta:
+        family: RA
+        name: Vulnerability Scanning
+    SA-11 (1):
+      justifications:
+      - component: SA-Policy
+        narrative: 'The Cloud Foundry community uses Code Climate on platform components
+          such as Bosh and Cloud Controller. The results of the scans are publicly
+          available and can be run by 18F at any time.
+
+          '
+        references:
+        - component: SA-Policy
+          system: 18F
+          verification: DEPLOYMENT_TESTING
+        system: 18F
+      - component: BOSH
+        implementation_status: implemented
+        narrative: 'Bosh uses CodeClimate as it''s primary static code analysis tool.
+          The results of the test are publicly avaiable.
+
+          '
+        references:
+        - component: BOSH
+          system: CloudFoundry
+          verification: STATIC_CODE_ANALYSIS
+        system: CloudFoundry
+      - component: CloudController
+        implementation_status: implemented
+        narrative: 'The Cloud Controller uses CodeClimate as it''s primary static
+          code analysis tool. The results of the test are publicly avaiable.
+
+          '
+        references:
+        - component: CloudController
+          system: CloudFoundry
+          verification: STATIC_CODE_ANALYSIS
+        system: CloudFoundry
+      meta:
+        family: SA
+        name: Developer Security Testing and Evaluation | Static Code Analysis
+    SA-22 (1):
+      justifications:
+      - component: SA-Policy
+        implementation_status: null
+        narrative: "18F will replace information system components when support for\
+          \ the components is no longer available from the developer, vendor, or manufacturer;\
+          \ and will provide justification and documents approval for the continued\
+          \ use of unsupported system components required to satisfy mission/business\
+          \ needs.\nCloud Foundry Platform as a Service system replacement:\nA system\
+          \ & software inventory is run nightly, and the DevOps team reviews the inventory\
+          \ weekly to ensure that all software inventoried is accurate and currently\
+          \ supported.  This process includes:\nVerify that the software license support\
+          \ expiration date is not within six months. 18F uses the open source version\
+          \ of Cloud Foundry which uses the open source Apache 2.0 license.\nEnsure\
+          \ that the software version is still supported.  Refer to the vendor's support\
+          \ website to verify that support does not have an \u201CEnd of Life\u201D\
+          \ date of less than six months.\nSince 18F is using the open source version\
+          \ of Cloud Foundry, an additional task will be issued to upgrade Cloud Foundry\
+          \ suite to the latest versions. DevOps will review the GitHub cloudfoundry/cf-release\
+          \ repository for implementation of the updated version.\n"
+        references:
+        - component: SA-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      meta:
+        family: SA
+        name: Unsupported System Components
+    SC-12 (1):
+      justifications:
+      - component: SC-Policy
+        implementation_status: true
+        narrative: 'Authorized federal staff rotate, encrypt, and backup keys monthly.
+          Privileged users can access the keys only with two-factor authentication
+          and a decryption passphrase. In the rare case that both the keys and the
+          decryption passphrase for the backup are lost or compromised, new keys can
+          be rotated in by authorized federal staff, while maintaining availability
+          of information.
+
+          '
+        references:
+        - component: SC-Policy
+          system: 18F
+          verification: KEY_ROTATION
+        system: 18F
+      meta:
+        family: SC
+        name: Cryptographic Key Establishment and Management | Availability
+    SC-13:
+      justifications:
+      - component: SecureProxy
+        implementation_status: null
+        narrative: 'Cloud.gov forces https using SecureProxy:
+
+          Applications running on Cloud Foundry receive requests through the URLs
+          configured for the application. HTTP requests arrive on ports 80 and 443.
+          Additionally, Cloud Foundry requires a channel for TCP/WebSocket traffic.
+          The default cf-release manifest assigns port 4443 for TCP/WebSocket communications.
+
+          All traffic from the public internet to the Cloud Controller and UAA happens
+          over HTTPS. Inside the boundary of the system, components communicate over
+          publish-subscribe (pub-sub) message bus, NATs on port 4222.
+
+          To combat spoofing Cloud Foundry network traffic rules help prevent the
+          attack from accessing application containers. Cloud Foundry uses application
+          isolation, operating system restrictions, and encrypted connections to further
+          mitigate risk.
+
+          Application developers push their code using the Cloud Foundry API. Cloud
+          Foundry secures each call to the CF API using the UAA and SSL
+
+          '
+        system: 18F
+      - component: UAA
+        implementation_status: null
+        narrative: 'As for stored data the following cryptographic mechanisms are
+          used to prevent unauthorized disclosure and modification of stored data.
+
+          Operators configure encryption of the identity store in the UAA. When users
+          register an account with the Cloud Foundry platform, the UAA acts as the
+          user store and stores user passwords in the UAA database using bcrypt, a
+          blowfish encryption algorithm, which enables Cloud Foundry to store a secure
+          hash of user passwords.
+
+          The Cloud Controller stores the configuration for an application in an encrypted
+          database table. This configuration data includes user-specified environment
+          variables and service credentials for any services bound to the app.
+
+          '
+        system: CloudFoundry
+      meta:
+        family: SC
+        name: Cryptographic Protection
+    SC-28 (1):
+      justifications:
+      - component: UAA
+        implementation_status: null
+        narrative: '
+
+          The Cloud Foundry platform as a service does NOT create, store or process
+          any personally identifiable information (PII) or sensitive information as
+          identified by parameter requirement 1.
+
+
+          Applications running on Cloud Foundry receive requests through the URLs
+          configured for the application. HTTP requests arrive on ports 80 and 443.
+          Additionally, Cloud Foundry requires a channel for TCP/WebSocket traffic.
+          The default cf-release manifest assigns port: 4443 for TCP/WebSocket communications.
+
+          All traffic from the public internet to the Cloud Controller and UAA happens
+          over HTTPS. Inside the boundary of the system, components communicate over
+          a publish-subscribe (pub-sub) port: 4222 message bus, NATs
+
+
+          For stored data identified by parameter 2, the following cryptographic mechanisms
+          are used to prevent unauthorized disclosure and modification of stored data.
+
+          Operators configure encryption of the identity store in the UAA. When users
+          register an account with the Cloud Foundry platform, the UAA, acts as the
+          user store and stores user passwords in the UAA database using bcrypt. Bcrypt
+          is a blowfish encryption algorithm, which enables cloud foundry to store
+          a secure hash of your users'' passwords.
+
+          The Cloud Controller stores the configuration for an application in an encrypted
+          database table. This configuration data includes user-specified environment
+          variables and service credentials for any services bound to the app.
+
+          Application developers push their code using the Cloud Foundry API. Cloud
+          Foundry secures each call to the CF API using the UAA and SSL
+
+          To combat spoofing Cloud Foundry network traffic rules help prevents the
+          attack from accessing application containers. Cloud Foundry uses application
+          isolation, operating system restrictions, and encrypted connections to further
+          mitigate risk.
+
+          '
+        system: CloudFoundry
+      meta:
+        family: SC
+        name: Protection Of Information At Rest | Cryptographic Protection
+    SC-7:
+      justifications:
+      - component: SC-Policy
+        implementation_status: null
+        narrative:
+          b: '18F Implements subnetworks for publicly accessible system components
+            that are logically separated from internal organizational networks
+
+            '
+        system: 18F
+      - component: EC2
+        implementation_status: null
+        narrative:
+          a: "The AWS network provides significant protection against traditional\
+            \ network security issues, and 18F can implement further protection. The\
+            \ following are a few examples:\nDistributed Denial Of Service (DDoS)\
+            \ Attacks. AWS API endpoints are hosted on large, Internet-scale, infrastructure.\
+            \ Proprietary DDoS mitigation techniques are used. Additionally, AWS\u2019\
+            s networks are multi-homed across a number of providers to achieve Internet\
+            \ access diversity.\nMan in the Middle (MITM) Attacks. All of the AWS\
+            \ APIs are available via SSL-protected endpoints which provide server\
+            \ authentication. Amazon EC2 AMIs automatically generate new SSH host\
+            \ certificates on first boot and log them to the instance\u2019s console.\
+            \ 18F can then use the secure APIs to call the console and access the\
+            \ host certificates before logging into the instance for the first time.\
+            \ 18F uses SSL for all interactions with AWS.\nIP Spoofing. Amazon EC2\
+            \ instances cannot send spoofed network traffic. The AWS-controlled, host-based\
+            \ firewall infrastructure will not permit an instance to send traffic\
+            \ with a source IP or MAC address other than its own.\n\nAmazon EC2 provides\
+            \ a complete firewall solution; this mandatory inbound firewall is configured\
+            \ in a default deny-all mode and Amazon EC2 customers must explicitly\
+            \ open the ports needed to allow inbound traffic. The traffic may be restricted\
+            \ by protocol, by service port, as well as by source IP address (individual\
+            \ IP or Classless Inter-Domain Routing (CIDR) block).\nThe firewall is\
+            \ configured in groups permitting different groups of instances to have\
+            \ different rules.\n"
+        system: AWS
+      - component: VPC
+        implementation_status: null
+        narrative:
+          a: 'AWS Boundary Protection - Secure Network Architecture
+
+            18F utilizes the AWS provided virtual network devices, including firewall
+            and other boundary devices, in place to monitor and control communications
+            at the external boundary of the network and at key internal boundaries
+            within the network. These boundary devices employ rule sets, access control
+            lists (ACL), and configurations to enforce the flow of information to
+            specific information system services.
+
+            ACLs, or traffic flow policies, are established on each managed interface,
+            which manage and enforce the flow of traffic.
+
+            18F connects to an AWS access point via HTTP or HTTPS using Secure Sockets
+            Layer (SSL), a cryptographic protocol that is designed to protect against
+            eavesdropping, tampering, and message forgery.
+
+            18F utilizes the AWS Virtual Private Cloud (VPC), which provides a private
+            subnet within the AWS cloud. Each VPC is configured to utilize Routing
+            Rules, Subnet Rules, and Security Group Rules.  Each of these controls
+            must have appropriate rules and routes in-place before any external service
+            is able to reach a host within AWS.
+
+            '
+          b: 'Each VPC is configured to utilize Routing Tables, and Security Groups.  Each
+            of these controls must have appropriate rules and routes in-place before
+            any external service is able to reach a host within Cloud Foundry.
+
+            '
+          c: 'The Cloud.gov system is internal to the 18F Virtual Private Cloud (VPC)
+            and does not connect to external networks or information systems outside
+            the 18F Virtual Private Cloud (VPC).
+
+            '
+        system: AWS
+      - component: ApplicationSecurityGroups
+        implementation_status: null
+        narrative:
+          a: 'Cloud Foundry recommends that the use of Cloud Foundry ASGs to specify
+            egress access rules for your applications. This functionality enables
+            secure restricted application outbound traffic to predefined routes.
+
+            '
+        system: CloudFoundry
+      - component: DEA
+        implementation_status: null
+        narrative:
+          a: 'Cloud Foundry Boundary Protection
+
+            Cloud Foundry implements network traffic rules using Linux iptables on
+            the component VMs. Operators can configure rules to prevent system access
+            from external networks and between internal components, and to restrict
+            applications from establishing connections over the DEA network interface.
+
+            Spoofing- If an IP, MAC, or ARP spoofing attack bypasses the physical
+            firewall for the deployment, Cloud Foundry network traffic rules help
+            prevent the attack from accessing application containers. Cloud Foundry
+            uses application isolation, operating system restrictions, and encrypted
+            connections to further mitigate risk.
+
+            '
+        system: CloudFoundry
+      meta:
+        family: SC
+        name: Boundary Protection
+    SI-10:
+      justifications:
+      - component: BOSH
+        implementation_status: implemented
+        narrative: 'All 18F DevOps user input happens at the BOSH command line interface
+          (CLI) which requires specific syntax and parameters to be used in order
+          to execute job functions. Rules for checking the valid syntax of information
+          system inputs (e.g., character set, length, numerical range, acceptable
+          values) are in place to verify that inputs match specified definitions for
+          format and content. Inputs passed to interpreters are prescreened to prevent
+          the content from being unintentionally interpreted as commands. The extent
+          to which the information system is able to check the accuracy, completeness,
+          validity, and authenticity of information is guided by organizational policy
+          and operational requirements.
+
+          The data inputs as part of the Cloud Foundry are validated in several ways.
+          The validation is a series of steps put in place to ensure consistent data
+          and to protect the system from corruption, either malicious or accidental.
+          The data validation takes place in the same mechanism either through the
+          web user interface (where data validation errors are shown to the authenticated
+          user to correct) or programmatically through web service APIs. (where error
+          messages are returned showing where data is rejected).
+
+          '
+        system: CloudFoundry
+      - component: CloudController
+        implementation_status: implemented
+        narrative: 'The UAA uses a Restful API with set endpoint and parameters. Users
+          depending on thier authorized access can only make request to specific endpoint
+          that activate specific functions that take a limited and defined set of
+          parameters.
+
+          '
+        system: CloudFoundry
+      - component: UAA
+        implementation_status: implemented
+        narrative: 'The UAA uses an api with set endpoint and parameters. Users depending
+          on thier authorized access can only make request to specific endpoint that
+          activate specific functions that take a limited and defined set of parameters.
+
+          '
+        system: CloudFoundry
+      meta:
+        family: SI
+        name: Information Input Validation
+    SI-2:
+      justifications:
+      - component: CICloudGov
+        implementation_status: null
+        narrative:
+          b: 'Tests software and firmware updates related to flaw remediation for
+            effectiveness and potential side effects before installation.
+
+            '
+          c: 'Installs security-relevant software and firmware updates within 30 daysrelease
+            of updates of the release of the updates.
+
+            '
+          d: '18F incorporates flaw remediation into the its configuration management
+            process. New versions of Cloud.gov can easily recreated and deployed in
+            the event of any system flaws.
+
+            '
+        references:
+        - component: CICloudGov
+          system: 18F
+          verification: CONCOURSE_PIPELINE
+        system: 18F
+      - component: SI-Policy
+        implementation_status: null
+        narrative:
+          a: '18F identifies all system flaws related to Cloud.gov, reports system
+            flaws to information system owners, Authorizing officials, DevOps and
+            SecOp  and corrects information system flaws that affect Cloud.Gov
+
+            Cloud Foundry manages software vulnerability using releases and BOSH stemcells.
+            New Cloud Foundry releases are created with updates to address code issues,
+            while new stemcells are created with patches for the latest security fixes
+            to address any underlying operating system issues. New Cloud Foundry releases
+            are located at https://github.com/Cloud Foundry/cf-release.
+
+            18F implemenets the release of Cloud Foundy he what (or the software developer/vendor
+            in the case of software developed and maintained by a vendor/contractor)
+            promptly installs newly released security relevant patches and tests patches,
+            for effectiveness and potential side effects on information systems before
+            installation.
+
+            '
+        references:
+        - component: SI-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      meta:
+        family: SI
+        name: Flaw Remediation
+    SI-4:
+      justifications:
+      - component: SI-Policy
+        implementation_status: null
+        narrative:
+          a: "The 18F DevOps and SecOps teams monitors the Cloud.Gov information system\
+            \ to detect potential attacks and intrusions from internal and external\
+            \ sources in accordance with the 18F System Information and Integrity\
+            \ Policy section 3 - Information System monitoring, the FedRAMP Incident\
+            \ communication procedures and GSA CIO-IT Security-08-39 section \u201C\
+            System Monitoring / Audit Record Review \u201C for GSA specifc infomation\
+            \ systems\n"
+          b: '18F identifies un-authorized access to the Cloud.Gov information system
+            using   automated monitoring tools within its virutal proviate cloud for
+            monitoringing, log management and event analysis. 18F monitors for attacks
+            and indicators of potential attacks,  unauthorized local, network, and
+            remote connections.
+
+            '
+          c: 'The infrastructure that hosts Cloud.Gov provides monitoring and intrusion
+            detcetion of unsual activity at  the phyical and network layers. 18F is
+            responsible for monitoring everything related to its virtual infrastructure
+            and has deployed monitoring  and intrusion dectction tools within its
+            virtual private cloud to log and dectect malicious activities to its information
+            systems including Cloud.Gov.
+
+            '
+          d: '18F ensures intrusion and monitoring tools are protected  from unauthorized
+            access by only granting access to certian members from the DevOps and
+            SecOps team. All monitoring and intrusion information data is protected
+            by limiting accounts to authorized privileged users only and is maintained
+            in secured repositories for review by those members.
+
+            '
+          e: 'Information system monitoring will be heightened based on advisories
+            from Pivitol, US-CERT Advisories, commercial security communities, and
+            other sources.
+
+            '
+          f: 'Information system monitoring will be conducted in accordance and compliance
+            with 18F security policies and all applicable laws, Executive Orders,
+            directives, and regulations.
+
+            '
+          g: '18F provides monitoring of all information system components in the
+            event of an event or incident, information will be provided as it is available.  Scheduled
+            reports will be provided for events such as after-hours administrative
+            logins, users being added to privileged groups, persistent malware detections,
+            etc. to designated members of the DevOps teams and SecOps teams as needed
+
+            '
+        references:
+        - component: SI-Policy
+          system: 18F
+          verification: POLICY_DOC
+        system: 18F
+      meta:
+        family: SI
+        name: Information System Monitoring
