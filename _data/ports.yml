@@ -1,0 +1,6 @@
+ports:
+- port: 443
+  type: TCP
+  protocol: https
+  purpose: ""
+  usedBy: ""

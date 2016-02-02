@@ -1,40 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
-   <title>{{ page.title }} - {{ site.title }}</title>
-
-   <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/style.css" >
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="{{ site.path }}/js/bootstrap.min.js"></script>
+{% include head.html %}
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">{{ site.title }}</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="https://github.com/drjekyllthemes/jekyll-bootstrap-theme">About</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
+   {% include nav_top.html %}
     <div class="container">
-      <div class="content">
+      <div class="col-lg-12">
+        {% include nav_sidebar.html %}
+      </div>
+      <div class="col-md-9">
         {{ content }}
       </div>
     </div><!-- /.container -->
 
 </body>
+{% if site.google_analytics %}
+{% include google_analytics.html %}
+{% endif %}
 </html>
