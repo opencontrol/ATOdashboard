@@ -1,15 +1,15 @@
+
 {% for control in site.controls %}
-{{ site.data.callout_primary }}
-  <h3>{{ control.title }}</h3>
-  {% for control in control.controls %}
-    <i>{{ control.control }}</i>
-    {% if control.gh-issue %}<li><a href='#{{ control.gh-issue }}'>Github Issue</a></li>{% endif %}
+  <h3>{{ site.data.alerts.label_primary }}{{ control.number }}{{ site.data.alerts.label_end }} {{ control.title }}</h3>
+  {% for item in control.items %}
+      <b>{{ item.item }}</b>
       <div class="progress">
-        {{ site.data.alerts.progress_done }}{{ control.done }}{{ site.data.alerts.progress_end }}
-        {{ site.data.alerts.progress_doing }}{{ control.doing }}{{ site.data.alerts.progress_end }}
-        {{ site.data.alerts.progress_todo }}{{ control.todo }}{{ site.data.alerts.progress_end }}
+        {{ site.data.alerts.progress_done }}{{ item.done }}{{ site.data.alerts.progress_end }}
+        {{ site.data.alerts.progress_doing }}{{ item.doing }}{{ site.data.alerts.progress_end }}
+        {{ site.data.alerts.progress_todo }}{{ item.todo }}{{ site.data.alerts.progress_end }}
       </div>
-        {{ content }}
+      <p>{{ item.output }}</p>
+      {% if item.gh-issue %}<li><a href='{{ item.gh-issue }}' target='_blank'>See Github Issue</a></li>{% endif %}
   {% endfor %}
-{{ site.data.callout_end }}
+  <p>{{ control.content }}</p>
 {% endfor %}

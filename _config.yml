@@ -18,5 +18,6 @@ exclude:
 safe: false
 
 collections:
-  - controls
-  - system
+  controls:
+    output: true
+    permalink: /controls/:path/
