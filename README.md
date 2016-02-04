@@ -1,50 +1,8 @@
-# jekyll-bootstrap-theme
+# Data.gov Authority to Operate (ATO)
 
-Jekyll theme w/ Bootstrap; see a live demo @ [`drjekyllthemes.github.io/jekyll-bootstrap-theme` »](http://drjekyllthemes.github.io/jekyll-bootstrap-theme/)
+This repository/site is used for the organization and collaborative creation and management of the various *Controls* and *System*  Documentation used to inform GSA's Authorization to Operate (ATO). Documentation is structured in accordance with GSA's Lightweight ATO or (LATO) for a FIMSA Compliance utilizing NIST standard format 800 (NIST 800 rev.4 - See Data and Docs directory for all referenced materials). The site provides a minimalist approach to separately managing Security Documentation across and amongst teams and boundaries.
 
+## License and Contributing
+We're so glad you're thinking about re-using and/or contributing to Data.gov!
 
-Note: The theme uses the bootstrap sass/scss (source) version
-letting you change (override) all bootstrap css variables.
-
-Example:
-
-~~~
-tbd
-~~~
-
-
-Note: GitHub Pages has built-in support for sass/scss, thus, your static
-site will result in a single all-in-one-file stylesheet, that is, `style.css`.
-
-
-
-## Build & Update Notes
-
-- Get a copy of the [`bootstrap-sass`](https://github.com/twbs/bootstrap-sass)
-  archive - the official Sass port of Bootstrap
-
-tbd
-
-
-
-
-## Alternative Jekyll Themes
-
-- [Shiori](https://github.com/ellekasai/shiori) by Elle Kasai
-  (ships w/ pre-defined color themes e.g. Dark, Turquoise, Green, Blue, Purple, Orange, Red)
-
-
-
-### More Themes
-
-See the [Dr. Jekyll's Themes](https://drjekyllthemes.github.io) directory.
-
-### More Quick Starter Wizard Scripts
-
-See the [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
-
-
-## Questions? Comments?
-
-Send them along to the [wwwmake forum](http://groups.google.com/group/wwwmake).
-Thanks!
+Before contributing to Data.gov we encourage you to read our [CONTRIBUTING](https://github.com/GSA/catalog-app/blob/master/CONTRIBUTING.md) guide, our [LICENSE](https://github.com/GSA/catalog-app/blob/master/LICENSE.md), and our README (you are here), all of which should be in this repository. If you have any questions, you can email the Data.gov team at [datagov@gsa.gov](mailto:datagov@gsa.gov).
