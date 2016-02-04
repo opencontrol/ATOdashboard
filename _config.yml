@@ -1,6 +1,7 @@
 ###########
 # site.url, site.title
 title: 'Data.gov ATO'
+branch: gh-pages
 
 ## note:
 #  use site.path in your templates to make it work for both protocols e.g. http and https
