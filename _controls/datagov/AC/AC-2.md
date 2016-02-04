@@ -11,7 +11,7 @@ items:
     doing: 30
     done: 60  
     gh-issue:
-    note: ""
+    note: "Here is where we put status updates"
 ---
 The organization:
 

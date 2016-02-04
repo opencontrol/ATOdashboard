@@ -11,7 +11,7 @@ items:
     doing: 10
     done: 80  
     gh-issue: https://github.com/GSA/datagov-cloud-migration/issues/14
-    note: ""
+    #note: ""
 ---
 `18F specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account
 `

@@ -10,11 +10,12 @@
           {{ site.data.alerts.progress_doing }}{{ item.doing }}{{ site.data.alerts.progress_end }}
           {{ site.data.alerts.progress_todo }}{{ item.todo }}{{ site.data.alerts.progress_end }}
         </div>
-        {% if item.gh-issue %}<a href="{{ item.gh-issue }}" target='_blank' class="btn btn-primary" role="button">Discuss</a>{% endif %}
+        {% if item.note %}<p>{{ site.data.alerts.alert_info }}{{ item.note }}{{ site.data.alerts.alert_end }}</p>{% endif %}
+        {% if item.gh-issue %}<a href="{{ item.gh-issue }}" target='_blank' class="btn btn-primary" role="button">Manage</a>{% endif %}
       </div>
   {% endfor %}
       <div class="panel-body">
-        <a class="btn btn-danger" href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ control.path }}">Edit</a>
+        <a class="btn btn-danger pull-right" href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ control.path }}">Edit</a>
         <p>{{ control.content }}</p>
       </div>
     </div>

@@ -11,7 +11,7 @@ items:
     doing: 10
     done: 80  
     gh-issue: https://github.com/GSA/datagov-cloud-migration/issues/14
-    note: ""
+    #note: ""
 ---
 `For all environments, Account Managers, the 18F Project Manager, and/or Information System Owner will be notified when accounts are no longer required, accounts are terminated or transferred, and when individual system usage or need to know changes. Notification will be achieved via electronic notification or other official means.`
 

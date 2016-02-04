@@ -11,7 +11,7 @@ items:
     doing: 10
     done: 80  
     gh-issue: https://github.com/GSA/datagov-cloud-migration/issues/14
-    note: ""
+    #note: ""
 ---
 `18F Monitors the use of all information system accounts within its environment.`
 

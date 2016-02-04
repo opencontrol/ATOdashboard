@@ -11,7 +11,7 @@ items:
     doing: 10
     done: 80  
     gh-issue: https://github.com/GSA/datagov-cloud-migration/issues/14
-    note: ""
+    #note: ""
 ---
 `18F reviews user and system accounts for compliance with account management requirements at least on an annual basis.  Currently, system and user accounts are being monitored manually on a monthly basis and programmatically on a continuous basis.`
 

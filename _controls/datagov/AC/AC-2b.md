@@ -11,7 +11,7 @@ items:
     doing: 10
     done: 80  
     gh-issue: https://github.com/GSA/datagov-cloud-migration/issues/14
-    note: ""
+    #note: ""
 ---
 `18F assigns account managers from the DevOps team for information system accounts. Account managers are assigned for account groups in all environments, determined by the Cloud Foundry Project Manager and/or the Information System Owner`
 
