@@ -1,6 +1,6 @@
 #File provides short-hand creation of various Boostrap CSS features for access through Jekyll's site.data variable SEE - http://jekyllrb.com/docs/datafiles/ & http://getbootstrap.com/components/
 ---
-alert_info: '<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>'
+alert_info: '<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b>'
 alert_todo: '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>To Do: </b>'
 alert_doing: '<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Doing: </b>'
 alert_done: '<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Done: </b>'
