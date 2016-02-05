@@ -6,22 +6,13 @@ boundary: application
 tags: [LATO, FEDRAMP]
 items:
   - item: 'AC-2'
-    todo: 20
-    doing: 10
-    done: 70   
+    todo: 10
+    doing: 30
+    done: 60   
     issues:
     - issue: info #todo, doing, done
       text:
-      url: http://github.com/jjediny
-    - issue: todo #todo, doing, done
-      text:
-      url: http://github.com/jjediny      
-    - issue: doing #todo, doing, done
-      text:
-      url: http://github.com/jjediny      
-    - issue: done #todo, doing, done
-      text:
-      url: http://github.com/jjediny      
+      url: http://github.com/jjediny             
     contacts:
     - contact: Data.gov
       role: Owner
