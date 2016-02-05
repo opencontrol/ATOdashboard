@@ -26,8 +26,8 @@ The following table lists the principal hardware components for Cloud.gov.
 
 ## Software Inventory
 
-Network Inventory
+## Network Inventory
 
-Ports, Protocols and Services
+## Ports, Protocols and Services
 
-System Interconnections
+## System Interconnections

@@ -1,4 +1,3 @@
-
 {% for control in site.controls %}
   <h3>{{ site.data.alerts.label_default }}{{ control.number }}{{ site.data.alerts.label_end }} {{ control.title }}</h3>
   {% for item in control.items %}
@@ -6,12 +5,16 @@
       <div class="panel-heading">
         <h3 class="panel-title">{{ item.item }}</h3>
         <div class="progress">
-          {{ site.data.alerts.progress_done }}{{ item.done }}{{ site.data.alerts.progress_end }}
+          {{ site.data.alerts.progress_done }}{{ item.done }}{{ site.data.alerts.progress_end}}
           {{ site.data.alerts.progress_doing }}{{ item.doing }}{{ site.data.alerts.progress_end }}
           {{ site.data.alerts.progress_todo }}{{ item.todo }}{{ site.data.alerts.progress_end }}
         </div>
-        {% if item.note %}<p>{{ site.data.alerts.alert_info }}{{ item.note }}{{ site.data.alerts.alert_end }}</p>{% endif %}
-        {% if item.gh-issue %}<a href="{{ item.gh-issue }}" target='_blank' class="btn btn-primary" role="button">Manage</a>{% endif %}
+        {% for issue in item.issues %}
+        {% if issue.issue == 'info' %}<p>{{ site.data.alerts.alert_info }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alerts.alert_end }}</p>{% endif %}
+        {% if issue.issue == 'todo' %}<p>{{ site.data.alerts.alert_todo }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alerts.alert_end }}</p>{% endif %}
+        {% if issue.issue == 'doing' %}<p>{{ site.data.alerts.alert_doing }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alerts.alert_end }}</p>{% endif %}
+        {% if issue.issue == 'done' %}<p>{{ site.data.alerts.alert_done }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alert_end }}</p>{% endif %}
+        {% endfor %}
       </div>
   {% endfor %}
       <div class="panel-body">

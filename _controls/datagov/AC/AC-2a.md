@@ -6,12 +6,16 @@ boundary: application
 tags: [LATO, FEDRAMP]
 items:
   - item: 'Applications and Websites'
-    owner: Data.gov
     todo: 20
     doing: 10
-    done: 70  
-    gh-issue: https://github.com/GSA/datagov-cloud-migration/issues/14
-    #note: ""
+    done: 70   
+    issues:
+    - issue: "info" #info, todo, doing, done
+      text:
+      url:
+    contacts:
+    - contact: Data.gov
+      role: Owner
 ---
 ## Applications and Websites
 `18F identifies and selects the following types of information system accounts to support organizational missions/business functions: individual, group, system, application.`
