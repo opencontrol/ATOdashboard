@@ -23,3 +23,5 @@ items:
 ```
 The Application system owner (SO) should ensure its applications provide a way to manage user’s access using identifiers (i.e. individual, group, system, application, guest/anonymous, and temporary) if required and not handled by the 18F DevOps team.
 ```  
+
+Data.gov manages users by...
