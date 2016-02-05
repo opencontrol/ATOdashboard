@@ -11,7 +11,7 @@ items:
     doing: 30
     done: 60  
     gh-issue:
-    note: "Here is where we put status updates"
+    note: "Here is where we put status updates https://github.com/GSA/datagov-cloud-migration/issues/14"
 ---
 The organization:
 
