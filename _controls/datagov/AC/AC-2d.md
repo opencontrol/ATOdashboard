@@ -1,17 +1,22 @@
 ---
 layout: default
 title: ""
+family: AC
 number: AC-2d
-boundary: application
+boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
   - item: 'Applications and Websites'
-    owner: Data.gov
-    todo: 10
+    todo: 20
     doing: 10
-    done: 80  
-    gh-issue: https://github.com/GSA/datagov-cloud-migration/issues/14
-    #note: ""
+    done: 70   
+    issues:
+    - issue: "info" #info, todo, doing, done
+      text:
+      url:
+    contacts:
+    - contact: Data.gov
+      role:
 ---
 `18F specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account
 `

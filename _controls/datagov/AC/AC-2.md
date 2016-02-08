@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Account Management"
-number: AC-2
-boundary: application
+number: AC-2a
+boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
   - item: 'AC-2'

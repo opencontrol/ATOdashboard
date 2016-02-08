@@ -1,12 +1,17 @@
-<div class="btn-group-vertical" role="group" aria-label="...">
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a href="#">Dropdown link</a></li>
-      <li><a href="#">Dropdown link</a></li>
-    </ul>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#intro">Intro</a></li>
+  <li><a data-toggle="tab" href="#AC">AC</a></li>
+  <li><a data-toggle="tab" href="#AU">AU</a></li>
+</ul>
+<div class="tab-content">
+  <div id="intro" class="tab-pane fade">
+      {% include intro.html %}
+  </div>
+  <div id="AC" class="tab-pane fade">
+      {% include AC.html %}
+  </div>
+  <div id="AU" class="tab-pane fade">
+      {% include AU.html %}
   </div>
 </div>

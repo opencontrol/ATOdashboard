@@ -1,0 +1,6 @@
+<h2>AC - Access Control</h2>
+{% for control in site.controls %}
+  {% if control.family == 'AC' %}
+    {% include controls.html %}
+  {% endif %}
+{% endfor %}

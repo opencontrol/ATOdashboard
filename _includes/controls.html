@@ -1,6 +1,5 @@
-{% for control in site.controls %}
-  <h3>{{ site.data.alerts.label_default }}{{ control.number }}{{ site.data.alerts.label_end }} {{ control.title }}</h3>
-  {% for item in control.items %}
+<h3>{{ site.data.alerts.label_default }}{{ control.number }}{{ site.data.alerts.label_end }} {{ control.title }}</h3>
+    {% for item in control.items %}
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">{{ item.item }}</h3>
@@ -16,10 +15,9 @@
         {% if issue.issue == 'done' %}<p>{{ site.data.alerts.alert_done }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alert_end }}</p>{% endif %}
         {% endfor %}
       </div>
-  {% endfor %}
+      {% endfor %}
       <div class="panel-body">
         <a class="btn btn-danger pull-right" href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ control.path }}">Edit</a>
         <p>{{ control.content }}</p>
       </div>
     </div>
-{% endfor %}
