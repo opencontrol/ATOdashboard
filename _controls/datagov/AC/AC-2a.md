@@ -7,13 +7,16 @@ boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
   - item: 'Applications and Websites'
-    todo: 20
+    todo: 10
     doing: 10
-    done: 70   
+    done: 80   
     issues:
     - issue: "info" #info, todo, doing, done
-      text:
+      text: 
       url:
+    - issue: "todo" #info, todo, doing, done
+      text: "please resolve"
+      url: http://github.com
     contacts:
     - contact: Data.gov
       role:
@@ -25,4 +28,5 @@ items:
 The Application system owner (SO) should ensure its applications provide a way to manage user’s access using identifiers (i.e. individual, group, system, application, guest/anonymous, and temporary) if required and not handled by the 18F DevOps team.
 ```  
 ---
-Data.gov manages users by...
+
+Data.gov manages users by... allow new registration...
