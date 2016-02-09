@@ -18,4 +18,5 @@ items:
     - contact: Data.gov
       role:
 ---
-content
+Auditable Events:
+All {{ page.items.contacts.contact }} Event audit logs will be made available as needed to other organizational entities for mutual support and selection of events to be audited. This will make audit log review more effective and ensure that user activities are captured with the data that is available.

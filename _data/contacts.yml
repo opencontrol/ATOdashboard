@@ -1,9 +1,8 @@
-contacts:
 - name: Curtis Lovett
   title: Information Systems Security Officer
   organization: 18F/GSA
   address: "1800 F Street, NW Washington DC 20405"
-  phone: "202-412-0337"
+  phone: ""
   email: curtis.lovett@gsa.gov
   roles:
   - role: ISSO
@@ -13,5 +12,5 @@ contacts:
   title: Information Systems Security Officer
   organization: 18F/GSA
   address: "1800 F Street, NW Washington DC 20405"
-  phone: "202-412-0337"
+  phone: ""
   email: curtis.lovett@gsa.gov

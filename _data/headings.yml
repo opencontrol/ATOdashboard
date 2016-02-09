@@ -1,37 +1,36 @@
-headings:
-  - family: AC
-    name: "Access Control"
-  - family: AU
-    name: "Audit and Accountability"
-  - family: AT
-    name: "Awareness and Training"
-  - family: CM
-    name: "Configuration Management"
-  - family: CP
-    name: "Contingency Planning"
-  - family: IA
-    name: "Identification and Authentication"
-  - family: IR
-    name: "Incident Response"
-  - family: MA
-    name: "Maintenance"
-  - family: MP
-    name: "Media Protection"
-  - family: PS
-    name: "Personnel Security"
-  - family: PE
-    name: "Physical and Environmental Protection"
-  - family: PL
-    name: "Planning"
-  - family: PM
-    name: "Program Management"
-  - family: RA
-    name: "Risk Assessment"
-  - family: CA
-    name: "Security Assessment and Authorization"
-  - family: SC
-    name: "System and Communications Protection"
-  - family: SI
-    name: "System and Information Integrity"
-  - family: SA
-    name: "System and Services Acquisition"
+- family: AC
+  name: "Access Control"
+- family: AU
+  name: "Audit and Accountability"
+- family: AT
+  name: "Awareness and Training"
+- family: CM
+  name: "Configuration Management"
+- family: CP
+  name: "Contingency Planning"
+- family: IA
+  name: "Identification and Authentication"
+- family: IR
+  name: "Incident Response"
+- family: MA
+  name: "Maintenance"
+- family: MP
+  name: "Media Protection"
+- family: PS
+  name: "Personnel Security"
+- family: PE
+  name: "Physical and Environmental Protection"
+- family: PL
+  name: "Planning"
+- family: PM
+  name: "Program Management"
+- family: RA
+  name: "Risk Assessment"
+- family: CA
+  name: "Security Assessment and Authorization"
+- family: SC
+  name: "System and Communications Protection"
+- family: SI
+  name: "System and Information Integrity"
+- family: SA
+  name: "System and Services Acquisition"

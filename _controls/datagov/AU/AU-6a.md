@@ -18,4 +18,18 @@ items:
     - contact: Data.gov
       role:
 ---
-content
+```
+Application and Websites:
+All applications and websites residing on the 18F AWS infrastructure and Cloud Foundry Platform will be reviewed by the 18F DevOps and OCISO on a continuous real-time basis through automated means including CloudTrail, Loggregator, and AlienVault USM for AWS.     
+```
+
+**AWS Audit Review Analysis and Reporting:**
+
+DevOps and ISSOs will conduct weekly manual and automated continuous audits of authorized accounts and configurations. These audits will include but are not limited to:
+
+* Administrative Accounts
+* Virtual Private Cloud (VPC)
+* Elastic Compute Cloud (EC2)
+* Simple Storage Service (S3)
+* Identity and Access Management (IAM)
+* Elastic Block Store (EBS)   

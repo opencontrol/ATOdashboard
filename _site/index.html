@@ -567,6 +567,46 @@ All applications will inherit access enforcement from the 18F VPC, Cloud Foundry
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
   </div>
   <div id="AU" class="tab-pane fade">
@@ -623,9 +663,7 @@ All applications will inherit access enforcement from the 18F VPC, Cloud Foundry
         <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/AU/AU-2.md">Edit</a>
         <p><h2>The organization</h2>
 
-<ul>
-<li>Determines that the information system is capable of auditing the following events:</li>
-</ul>
+<p>Determines that the information system is capable of auditing the following events:</p>
 
 <p><code>Assignment: organization-defined auditable events</code></p>
 
@@ -640,9 +678,12 @@ All applications will inherit access enforcement from the 18F VPC, Cloud Foundry
 <p><code>Assignment: organization-defined audited events (the subset of the auditable events defined in AU-2 a.) along with the frequency of (or situation requiring) auditing for each identified event</code></p>
 
 <p><strong>AU-2d Parameter Requirement</strong>: Successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events.  For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes.  Settings to be audited continually for each identified event.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">AWS Customer Responsibility Requirement:
+
+<p>AWS Customer Responsibility Requirement:
+<code>
 Customers are responsible for establishing, implementing, reviewing configuring and updating auditable events on their storage resources and virtual machines, based on a risk assessment and mission/business needs. The collection and protection of these audits belongs to the customer as well.
-</code></pre></div></p>
+</code></p>
+</p>
       </div>
     </div>
 
@@ -698,7 +739,7 @@ System Owners must ensure that their applications activities are monitored and c
       
       <div class="panel-body">
         <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/AU/AU-2b.md">Edit</a>
-        <p><p>content</p>
+        <p><p>All Data.gov Event audit logs will be made available as needed to other organizational entities for mutual support and selection of events to be audited. This will make audit log review more effective and ensure that user activities are captured with the data that is available.</p>
 </p>
       </div>
     </div>
@@ -782,7 +823,25 @@ System Owners must ensure that their applications activities are monitored and c
       
       <div class="panel-body">
         <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/AU/AU-6.md">Edit</a>
-        <p><p>content</p>
+        <p><h2>The organization</h2>
+
+<p>Reviews and analyzes information system audit records</p>
+
+<p><code>Assignment: organization-defined frequency</code> for indications of <code>Assignment: organization-defined inappropriate or unusual activity</code></p>
+
+<p><strong>AU-6a Parameter 1 Requirement</strong>: At least weekly
+<strong>AU-6a Parameter 2 Requirement</strong>: GSA S/SO or Contractor recommendation to be approved and accepted by the GSA AO.</p>
+
+<p>Reports findings to <code>Assignment: organization-defined personnel or roles</code></p>
+
+<p><strong>AU-6a Parameter 2 Requirement</strong>: ISSO, ISSM, Helpdesk, and the GSA Office of the Chief Information Security Officer following the Incident Reporting Procedures in GSA IT Security Procedural Guide 01-02, Incident Response</p>
+
+<p><strong>AWS Customer Responsibility Requirement:</strong>
+<code>
+Customers are responsible for:
+* Reviewing and analyzing information system audit records at least weekly for indications of inappropriate or unusual activity, and report’s findings to designated organizational officials; and
+* Adjusting the level of audit review, analysis, and reporting within the information system when there is a change in risk to organizational operations, organizational assets, individuals, other organizations, or the Nation based on law enforcement information, intelligence information, or other credible sources of information.
+</code></p>
 </p>
       </div>
     </div>
@@ -810,7 +869,21 @@ System Owners must ensure that their applications activities are monitored and c
       
       <div class="panel-body">
         <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/AU/AU-6a.md">Edit</a>
-        <p><p>content</p>
+        <p><div class="highlight"><pre><code class="language-text" data-lang="text">Application and Websites:
+All applications and websites residing on the 18F AWS infrastructure and Cloud Foundry Platform will be reviewed by the 18F DevOps and OCISO on a continuous real-time basis through automated means including CloudTrail, Loggregator, and AlienVault USM for AWS.     
+</code></pre></div>
+<p><strong>AWS Audit Review Analysis and Reporting:</strong></p>
+
+<p>DevOps and ISSOs will conduct weekly manual and automated continuous audits of authorized accounts and configurations. These audits will include but are not limited to:</p>
+
+<ul>
+<li>Administrative Accounts</li>
+<li>Virtual Private Cloud (VPC)</li>
+<li>Elastic Compute Cloud (EC2)</li>
+<li>Simple Storage Service (S3)</li>
+<li>Identity and Access Management (IAM)</li>
+<li>Elastic Block Store (EBS)<br></li>
+</ul>
 </p>
       </div>
     </div>
@@ -838,10 +911,93 @@ System Owners must ensure that their applications activities are monitored and c
       
       <div class="panel-body">
         <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/AU/AU-6b.md">Edit</a>
-        <p><p>content</p>
+        <p><p>Auditable Events:
+All  Event audit logs will be made available as needed to other organizational entities for mutual support and selection of events to be audited. This will make audit log review more effective and ensure that user activities are captured with the data that is available.</p>
 </p>
       </div>
     </div>
+
+  
+
+  
+    <h3><span class="label label-default">AU-6c</span> AU</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Applications and Websites</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/AU/AU-6c.md">Edit</a>
+        <p><p>The Data.gov Audit Log Management Policy provides guidance on Audit Monitoring and retention for the Data.gov program and states the Following:</p>
+
+<h2>Audit Monitoring, Analysis and Reporting</h2>
+
+<ul>
+<li>18F establishes processes for regularly reviewing audit log information, and reporting security issues if discovered. Reviews will occur at a minimum of weekly. These processes should be integrated with processes for incident response, in order to ensure standardization and cross-functional collaboration</li>
+<li>18F employs automated mechanisms to integrate audit monitoring, analysis and reporting into an overall process for investigation and response to suspicious activities.</li>
+<li>18F employs automated mechanisms to immediately alert security personnel of inappropriate or unusual activities that have security implications.</li>
+</ul>
+
+<h2>Audit Retention</h2>
+
+<ul>
+<li>Data.gov retains audit logs according to FedRAMP and FISMA retention policy to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.</li>
+<li>The log management framework will provide the capability to retain logs for 90 days online and one-year offline, with sufficient capacity as to mitigate the risk of exceeding storage space.</li>
+<li>Specific Policies, Procedures, Points of Contact, and Guidance will be established between 18F and GSA to support after-the-fact investigations, by the Data.gov Project Lead.</li>
+</ul>
+</p>
+      </div>
+    </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -851,6 +1007,46 @@ System Owners must ensure that their applications activities are monitored and c
   </div>
   <div id="AT" class="tab-pane fade">
       <h2>Awareness and Training</h2>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -948,6 +1144,8 @@ System Owners must ensure that their applications activities are monitored and c
   
 
   
+
+  
     <h3><span class="label label-default">CA-8</span> CA</h3>
     
     <div class="panel panel-default">
@@ -968,10 +1166,82 @@ System Owners must ensure that their applications activities are monitored and c
       
       <div class="panel-body">
         <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CA/CA-8.md">Edit</a>
-        <p><p>content</p>
+        <p><h2>The Organization</h2>
+
+<p>conducts penetration testing <code>Assignment: organization-defined frequency</code> on
+<code>Assignment: organization-defined information systems or system components.</code></p>
+
+<h2>AWS Customer Responsibility Requirement</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">AWS operates under a model of shared responsibility between the customer and AWS. AWS provides AMIs for client VMs that, after instantiation, are fully the customer agency’s’ responsibility. These default images are not included in vulnerability scanning activities conducted by AWS. Additionally, AWS will not maintain administrator access to customer VMs.
+
+Upon deployment of virtual machines, the customer assumes full administrator access and is responsible for performing additional application installation, configuration, patching, security hardening, operating system vulnerability scanning, web application vulnerability scanning, and database vulnerability scanning (as applicable) for assets with which they have implementation responsibility (above the hypervisor, within each instance) as necessary. Customer management of the security of their operating environment as well as conducting vulnerability scans and pen-tests shall be conducted in accordance with their own Risk Assessment, the AWS Acceptable Use Policy, and the AWS Vulnerability / Penetration Testing Request Form.
+
+Customers that want to conduct vulnerability scans and pen-tests of their operating environment must first contact AWS for permission To do so, AWS uses a web form to collect the information necessary to review security audit requests. In order to begin the authorization process, [please visit the following AWS site](http://aws.amazon.com/security/penetration-testing/)
+
+At the site, the customer selects the &quot;AWS Vulnerability / Penetration Testing Request Form&quot; link and completes the form as requested. This form also includes the AWS Terms and Policies with regard to testing. Once the form is completed and received by AWS, the authorization review process is conducted and normally takes 1-2 business days to complete.
+</code></pre></div>
+<hr>
+
+<h3>External Penetration Testing:</h3>
+
+<ul>
+<li><p>For external public facing penetration testing, 18F must request permission from AWS using the AWS Vulnerability / Penetration Testing Request Form to conduct penetration test activities against its own Virtual Private Cloud infrastructure and follow the AWS Acceptable Use Policy.
+Amazon requires customers to obtain authorization for penetration testing (or vulnerability assessments) both from or to their AWS resources.</p></li>
+<li><p><a href="http://aws.amazon.com/aup/">AWS Acceptable Use Policy</a></p></li>
+<li><p><a href="http://aws.amazon.com/security/penetration-testing/">AWS Penetration Testing</a></p></li>
+<li><p>The form requires 18F to submit information about the instances to test, identify the expected start and end dates/times of the test, and requires 18F team members to read and agree to Terms and Conditions specific to penetration testing and to the use of appropriate tools for testing. The end date may not be more than 3 months from the start date of the pen test as stated by AWS.</p></li>
+<li><p>AWS Security will then add 18 F’s source and destination addresses to a whitelist for the duration of the penetration test and will revoke white list privileges if they receive any complaints or reports about DoS attacks.</p></li>
+<li><p>GSA ISO will perform external vulnerability scanning and ISE will perform penetration testing services for the 18F information systems per the Memorandum of Understanding (MOU). It is also bound by the AWS penetration testing policy and procedures.</p></li>
+</ul>
+
+<h3>Internal Penetration Testing:</h3>
+
+<ul>
+<li>For internal penetration testing inside 18 F&#39;s Virtual Private Cloud, 18F team members will conduct authenticated vulnerability scans using Nessus, whitebox/greybox testing of the 18F environment using AWS friendly and approved assessment tools.</li>
+<li>For compliance with NIST Publication 800-53 CA-8, Parameter 1 Penetration Testing of all 18F Infrastructure and Application Components will occur annually. Parameter 2 Penetration Testing of Publicly Accessible</li>
+<li>Infrastructure will be performed on the direction of the GSA ISSO.<br></li>
+</ul>
 </p>
       </div>
     </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1026,10 +1296,568 @@ System Owners must ensure that their applications activities are monitored and c
 
   
 
+  
+
+  
+    <h3><span class="label label-default">CM-2</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Applications and Websites</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-2.md">Edit</a>
+        <p><h2>The organization</h2>
+
+<p>develops, documents, and maintains under configuration control, a current baseline configuration of the information system.</p>
+
+<h2>AWS Customer Responsibility Requirement:</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">The customer is responsible for guest operating systems, deployed applications, and configuration control of select networking resources such as EC2 host firewalls, and VPC internal network configuration. The customer is not responsible for the underlying cloud infrastructure. For Virtual Machine, AWS provides a Linux Amazon Machine Image (AMIs) for the guest operating system. The installation will be the minimum installation of the operating system, with no configuration applied to the ISO image. AWS does not perform patch management, system hardening, and does not provide any application support within the image.
+
+At customer instantiation of an AMI, the vendor makes no warranties as to the patch level or configuration settings. Customer responsibility includes updating any instance to a recent patch level and configuring to suit specific needs.
+
+Upon deployment of AMIs, the customer assumes full administrator access and is responsible for performing additional configuration, patching, security hardening, vulnerability scanning and application installation, as necessary. AWS will not maintain administrator access to customer EC2 instances, EBS storage or VPCs.
+</code></pre></div></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-3</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Applications and Websites</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-3.md">Edit</a>
+        <p><h2>The organization:</h2>
+
+<ul>
+<li>Determines the types of changes to the information system that are configuration-controlled;</li>
+<li>Reviews proposed configuration-controlled changes to the information system and approves or disapproves such changes with explicit consideration for security impact analyses;</li>
+<li>Documents configuration change decisions associated with the information system;</li>
+<li>Implements approved configuration-controlled changes to the information system;</li>
+<li>Retains records of configuration-controlled changes to the information system for [Assignment: organization-defined time period];</li>
+</ul>
+
+<p><strong>CM-3e Parameter Requirement:</strong> Retained for a period of not less than 1 year or in accordance with record retention policies and procedures; whichever is greater.</p>
+
+<p>Audits and reviews activities associated with configuration-controlled changes to the information system; and
+Coordinates and provides oversight for configuration change control activities through [Assignment: organization-defined configuration change control element (e.g., committee, board)] that convenes [Selection (one or more):</p>
+
+<p><code>Assignment: organization-defined frequency</code></p>
+
+<p><code>Assignment: organization-defined configuration change conditions</code></p>
+
+<p>*<em>CM-3g Parameters 1-3 Requirement: *</em>GSA S/SO or Contractor recommendation to be approved and accepted by the GSA AO.  Systems shall establish a central means (bulletin, status page, etc) of communicating major changes/development affecting services.</p>
+
+<h2>AWS Customer Responsibility Requirement:</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">The customer is responsible for establishing a Configuration Change Control process for their information systems built on the AWS infrastructure. This includes controlling the configuration of the guest Operating System and any applications that are installed on the customer’s instances.
+
+Additionally, the customer is responsible for testing, validating, analyzing changes to their information system built on the AWS infrastructure to determine potential security impacts, and documenting changes to the information system before implementing the changes on their operational systems built on the AWS infrastructure.   This also includes the guest Operating System and any applications that are installed on the customer’s instances.
+</code></pre></div></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-3a</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-3a.md">Edit</a>
+        <p></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-3b</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-3b.md">Edit</a>
+        <p></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-3c</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-3c.md">Edit</a>
+        <p></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-3d</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-3d.md">Edit</a>
+        <p></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-3e</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-3e.md">Edit</a>
+        <p><p>Records of configuration-controlled changes are retained for at least 1 year in accordance with the Data.gov Configuration Management policy and utilizing the GSA GitHub site and AWS S3 to store all changes requested, approved, disapproved, implemented and pending.</p>
+</p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-3e</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-3f.md">Edit</a>
+        <p><p>Audits for Data.gov AWS infrastructure and Cloud Foundry platform as a service and applications are conducted by Datagov &amp; 18F DevOps, GSA ISSOs and Cloud Foundry project manager of all configuration-controlled changes to the information system.  These audits take place no less than once a month and are documented in GSAs GitHub ticketing and tracking system, per the GSA Configuration management policy</p>
+
+<ul>
+<li>Data.gov will conduct a monthly audit of information system which identifies and eliminates unnecessary functions, ports, protocols, and/or services.</li>
+</ul>
+</p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-3g</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-3g.md">Edit</a>
+        <p><p>Data.gov coordinates and provides oversight for configuration change control activities through its GitHub tracking and ticketing systems and communications channels which is integrated with GitHub that convenes whenever there are significant and pending changes to the 18F security, cloud infrastructure and applications.</p>
+</p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-6</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-6.md">Edit</a>
+        <p><h2>The organization:</h2>
+
+<p>Establishes and documents configuration settings for information technology products employed within the information system using</p>
+
+<p><code>Assignment: organization-defined security configuration checklists that reflect the most restrictive mode consistent with operational requirements</code></p>
+
+<p><strong>CM-6a Parameter Requirement:</strong> GSA technical guidelines, NIST guidelines, Center for Internet Security guidelines (Level 1), or industry best practice guidelines in hardening their systems, as deemed appropriate by the GSA Authorizing Official. Implemented checklists must be integrated with Security Content Automation Protocol (SCAP) content (if available and/or to the greatest extent possible.)    </p>
+
+<p>Implements the configuration settings;
+Identifies, documents, and approves any deviations from established configuration settings for</p>
+
+<p><code>Assignment: organization-defined information system components</code></p>
+
+<p>based on <code>Assignment: organization-defined operational requirements</code></p>
+
+<p><strong>CM-6c Parameter Requirement 1:</strong> All information system components
+<strong>CM-6c Parameter Requirement 2:</strong>  GSA S/SO or Contractor recommendation to be approved and accepted by the GSA AO.
+Monitors and controls changes to the configuration settings in accordance with organizational policies and procedures.</p>
+
+<p><a href="http://usgcb.nist.gov/usgcb_faq.html#usgcbfaq_usgcbfdcc">USGCB checklist</a></p>
+
+<p><a href="http://scap.nist.gov/">Information on SCAP</a></p>
+
+<h2>AWS Customer Responsibility Requirement:</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">The customer is responsible for establishing, documenting, implementing, monitoring and controlling changes to configuration on their information systems built on the AWS infrastructure. This includes identifying, documenting, and approving exceptions from the mandatory configuration settings for customer instances within their information system. The customer is also responsible for the security configurations of guest operating systems, deployed applications, and configuration control (through automated mechanisms where possible) of select networking resources such as EC2 host firewalls, and VPC internal network configuration.
+
+AMIs contain standard releases from OS vendors such as Windows Server, RHEL, SUSE Linux and Ubuntu Linux. It is the customer’s responsibility to install the latest security patches after creating instances from these AMIs.  The Amazon Linux AMI guest operating system is patched to a point in time, typically quarterly.  However, customer responsibility includes updating any instance to a recent patch level and configuring to suit specific needs. AWS does not perform patch management, system hardening, and does not provide any application support within the image.  
+
+Upon deployment of AMIs, the customer assumes full administrator access and is responsible for performing additional configuration, patching, security hardening, vulnerability scanning and application installation, as necessary.  AWS will not maintain administrator access to customer EC2 instances, EBS storage or VPCs. Customers are responsible for establishing, documenting, implementing, monitoring, and enforcing the configuration settings on their virtual machines.
+Additionally the customer is responsible for incorporating a mechanism for the detection of unauthorized, security-relevant configuration changes into the customer’s incident response capability. The customer will also be responsible for controlling personnel/accounts that may change hardware/software and reviewing those privileges periodically.
+</code></pre></div></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-6a</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-6a.md">Edit</a>
+        <p><p>Data.gov uses established and documents configuration settings for its information technology products employed within its Virtual Private Cloud (VPC) and the Cloud Foundry platform that reflect the most restrictive mode consistent with operational requirements.</p>
+
+<p>Security &amp; Baseline Configuration, Utilizing SCAP Checklists when available, all configurations are validated via authenticated vulnerability and compliance scans, AWS Trusted Advisor, AWS Config, VisualOps cloud management, and AlienVault USM for AWS. </p>
+</p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-6b</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration Change</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-6b.md">Edit</a>
+        <p></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-8</span> CM</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Information System Component Inventory</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-8.md">Edit</a>
+        <p><h2>The organization:</h2>
+
+<ul>
+<li>Develops and documents an inventory of information system components that:</li>
+</ul>
+
+<ol>
+<li>Accurately reflects the current information system;</li>
+<li>Includes all components within the authorization boundary of the information system;</li>
+<li>Is at the level of granularity deemed necessary for tracking and reporting; and</li>
+<li>Includes</li>
+</ol>
+
+<p><code>Assignment: organization-defined information deemed necessary to achieve effective information system component accountability</code></p>
+
+<p><strong>CM-8a4 Parameter Requirement:</strong> GSA S/SO or Contractor recommended information deemed necessary to ensure property accountability that must be approved and accepted by the GSA AO.  List may include hardware inventory specifications (manufacturer, type, model, serial number, physical location), software license information, information system/component owner, and for a networked component/device, the machine name and network address.  See additional requirements and guidance.</p>
+
+<p>Reviews and updates the information system component inventory <code>Assignment: organization-defined frequency</code></p>
+
+<p><strong>CM-8b Parameter Requirement:</strong> After every change.</p>
+
+<h2>AWS Customer Responsibility Requirement:</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">The customer is responsible for developing, documenting, and maintaining an inventory of customer instances.
+</code></pre></div></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-8a</span> Information System Component Inventory</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Information System Component Inventory</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-8a.md">Edit</a>
+        <p></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">CM-8b</span> Information System Component Inventory</h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Information System Component Inventory</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/CM/CM-8b.md">Edit</a>
+        <p><ul>
+<li>Data.gov reviews and updates the information system component inventory on a monthly basis.</li>
+<li>Data.gov will update inventory of information system whenever installations, removals, and other changes are made</li>
+<li>Data.gov will verify that all components within the authorized boundary of the information system are either inventoried as part of the system or recognized by another system as a component within that system</li>
+</ul>
+</p>
+      </div>
+    </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
   </div>
   <div id="CP" class="tab-pane fade">
       <h2>Contingency Planning</h2>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1128,10 +1956,237 @@ System Owners must ensure that their applications activities are monitored and c
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h3><span class="label label-default">IA-2 (1)</span> </h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Information System Component Inventory</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/IA/IA-2(1).md">Edit</a>
+        <p><p>IA-2 (1) The information system implements multifactor authentication for network access to privileged accounts.</p>
+
+<h2>AWS Customer Responsibility Requirement:</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">AWS Multi-Factor Authentication (AWS MFA) provides an extra level of security that customer agencies apply to their AWS environment. Customer agencies can enable AWS MFA for their account and for individual users they have created under their account. With AWS MFA enabled a user that signs into the FedCloud Console will be prompted for their username and password, as well as for an authentication code from their MFA device. Taken together, these multiple factors provide increased security for customer agencies’ AWS account settings and resources.
+
+Virtual EC2 instances are completely controlled by the customer agency. Customers have full root access or administrative control over accounts, services, and applications. AWS does not have any access rights to customer instances and cannot log into the guest OS.
+
+AWS recommends a base set of security best practices to include disabling password-only access to their servers, and utilizing multi-factor authentication to gain access to their instances (or at a minimum certificate-based SSH Version 2 access)
+</code></pre></div>
+<h2>Applications and Websites (MFA):</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">System owners of applications and websites supported by 18F must ensure administrator access to applications utilize MFA.
+
+Public websites and applications that have no sensitive or private information are not required to implement MFA for general users.
+</code></pre></div></p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">IA-2 (2)</span> </h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Information System Component Inventory</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 100%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 0%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 0%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/IA/IA-2(12).md">Edit</a>
+        <p><p>IA-2 (12) The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials.</p>
+
+<h2>AWS Customer Responsibility Requirement:</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">None
+</code></pre></div>
+<p>Not Applicable for public general purpose applications and websites hosted within AWS and Cloud Foundry environments.                   </p>
+</p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">IA-2 (2)</span> </h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Information System Component Inventory</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/IA/IA-2(2).md">Edit</a>
+        <p><p>IA-2 (2) The information system implements multifactor authentication for network access to non-privileged accounts.</p>
+
+<h2>AWS Customer Responsibility Requirement:</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">AWS Multi-Factor Authentication (AWS MFA) provides an extra level of security that customer agencies apply to their AWS environment. Customer agencies can enable AWS MFA for their account and for individual users they have created under their account. With AWS MFA enabled a user that signs into the FedCloud Console will be prompted for their username and password, as well as for an authentication code from their MFA device. Taken together, these multiple factors provide increased security for customer agencies’ AWS account settings and resources.
+
+Virtual EC2 instances are completely controlled by the customer agency. Customers have full root access or administrative control over accounts, services, and applications. AWS does not have any access rights to customer instances and cannot log into the guest OS.
+
+AWS recommends a base set of security best practices to include disabling password-only access to their servers, and utilizing multi-factor authentication to gain access to their instances (or at a minimum certificate-based SSH Version 2 access)
+</code></pre></div>
+<p>Data.gov implements the use of multifactor Authentication (MFA) to add an extra layer of security for login access to its GitHub Repository and Slack for all 18F users. With MFA enabled, all Data.gov users are prompted for a username and password, as well as the authentication code from their MFA device.</p>
+</p>
+      </div>
+    </div>
+
+  
+
+  
+    <h3><span class="label label-default">IA-2</span> </h3>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Information System Component Inventory</h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 70%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 10%"><span class="sr-only">Progress Bar</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 20%"><span class="sr-only">Progress Bar</span></div>
+        </div>
+        
+        <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>: </b><a href="" target="_blank"></a></div></p>
+        
+        
+        
+        
+      </div>
+      
+      <div class="panel-body">
+        <a class="btn btn-danger pull-right" href="/edit///Users/johnjediny/datagovATO/_controls/datagov/IA/IA-2.md">Edit</a>
+        <p><p>The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).</p>
+
+<h2>AWS Customer Responsibility Requirement:</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">EC2
+Virtual EC2 instances are completely controlled by the customer agency. Customers have full root access or administrative control over accounts, services, and applications. AWS does not have any access rights to customer instances and cannot log into the guest OS.
+AWS recommends a base set of security best practices to include disabling password-only access to their servers, and utilizing multi-factor authentication to gain access to their instances (or at a minimum certificate-based SSH Version 2 access).
+
+Additionally, customers should employ a privilege escalation mechanism with logging on a per-user basis. For example, if the guest OS is Linux, after hardening their instance, they should utilize certificate-based SSHv2 to access the virtual instance, disable remote root login, use command-line logging, and use ‘sudo’ for privilege escalation.
+Customers should generate their own key pairs in order to guarantee that they are unique, and not shared with other customers or with AWS.
+
+EBS
+Once a customer creates an Amazon EBS volume, the customer can attach it to an Amazon EC2 instance. Once attached, it will appear as a mounted device similar to any hard drive or other block device. At that point, the instance can interact with the volume just as it would with a local drive, formatting it with a file system or installing applications on it directly. The customer controls the EC2 instance an EBS volume may be attached to.
+
+VPC
+Through the AWS Management Console, Amazon Virtual Private Cloud (Amazon VPC) lets customers provision a private, isolated section of the Amazon Web Services (AWS) Cloud where customers can launch AWS resources in the customer-defined virtual network. Customers can leverage multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
+</code></pre></div>
+<h2>Applications and Websites:</h2>
+<div class="highlight"><pre><code class="language-text" data-lang="text">It is the responsibility of the application system owner to ensure if user of the application require  unique identifiers for authentication into application.
+</code></pre></div></p>
+      </div>
+    </div>
+
+  
+
 
   </div>
   <div id="IR" class="tab-pane fade">
       <h2>Incident Response</h2>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1230,10 +2285,90 @@ System Owners must ensure that their applications activities are monitored and c
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
   </div>
   <div id="MP" class="tab-pane fade">
       <h2>Media Protection</h2>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1332,10 +2467,90 @@ System Owners must ensure that their applications activities are monitored and c
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
   </div>
   <div id="PE" class="tab-pane fade">
       <h2>Physical and Environmental Protection</h2>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1434,10 +2649,90 @@ System Owners must ensure that their applications activities are monitored and c
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
   </div>
   <div id="PM" class="tab-pane fade">
       <h2>Program Management</h2>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1536,10 +2831,90 @@ System Owners must ensure that their applications activities are monitored and c
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
   </div>
   <div id="SC" class="tab-pane fade">
       <h2>System and Communications Protection</h2>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1638,10 +3013,90 @@ System Owners must ensure that their applications activities are monitored and c
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
   </div>
   <div id="SA" class="tab-pane fade">
       <h2>System and Communications Protection</h2>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 

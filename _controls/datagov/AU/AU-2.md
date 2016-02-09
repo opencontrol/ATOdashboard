@@ -19,7 +19,7 @@ items:
       role:
 ---
 ## The organization
-* Determines that the information system is capable of auditing the following events:
+Determines that the information system is capable of auditing the following events:
 
 `Assignment: organization-defined auditable events`
 
@@ -33,7 +33,7 @@ items:
 
 **AU-2d Parameter Requirement**: Successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events.  For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes.  Settings to be audited continually for each identified event.
 
-```
 AWS Customer Responsibility Requirement:
+```
 Customers are responsible for establishing, implementing, reviewing configuring and updating auditable events on their storage resources and virtual machines, based on a risk assessment and mission/business needs. The collection and protection of these audits belongs to the customer as well.
 ```
