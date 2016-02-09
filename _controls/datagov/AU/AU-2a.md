@@ -18,4 +18,7 @@ items:
     - contact: Data.gov
       role:
 ---
-content
+```
+All applications will inherit the auditing functions and capabilities that reside within the 18F AWS environment and the Cloud Foundry Platform.
+System Owners must ensure that their applications activities are monitored and captured within audit logs.  
+```
