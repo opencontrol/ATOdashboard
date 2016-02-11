@@ -11,11 +11,11 @@ items:
     doing: 10
     done: 80   
     issues:
-    - issue: "info" #info, todo, doing, done
-      text: 
+    - issue: "todo" #info, todo, doing, done
+      text: "or todos"
       url:
     - issue: "todo" #info, todo, doing, done
-      text: "please resolve"
+      text: "this is where we create links to github issues"
       url: http://github.com
     contacts:
     - contact: Data.gov
@@ -29,4 +29,4 @@ The Application system owner (SO) should ensure its applications provide a way t
 ```  
 ---
 
-Data.gov manages users by... allow new registration...
+This is where we document the control
