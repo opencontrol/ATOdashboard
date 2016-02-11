@@ -7,9 +7,9 @@ boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
   - item: 'Applications and Websites'
-    todo: 20
-    doing: 10
-    done: 70   
+    todo: 0
+    doing: 0
+    done: 100   
     issues:
     - issue: "info" #info, todo, doing, done
       text:
