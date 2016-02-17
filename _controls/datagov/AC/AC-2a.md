@@ -6,14 +6,22 @@ number: AC-2a
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
+<<<<<<< HEAD
   - item: "Identifies and selects the following types of information system accounts to support organizational missions/business functions"
     todo: 20
+=======
+  - item: 'Applications and Websites'
+    todo: 10
+>>>>>>> origin/gh-pages
     doing: 10
-    done: 70   
+    done: 80   
     issues:
-    - issue: "info" #info, todo, doing, done
-      text:
+    - issue: "todo" #info, todo, doing, done
+      text: "or todos"
       url:
+    - issue: "todo" #info, todo, doing, done
+      text: "this is where we create links to github issues"
+      url: http://github.com
     contacts:
     - contact: Data.gov
       role:
@@ -27,4 +35,5 @@ items:
 The Application system owner (SO) should ensure its applications provide a way to manage user’s access using identifiers (i.e. individual, group, system, application, guest/anonymous, and temporary) if required and not handled by the 18F DevOps team.
 ```  
 ---
-Data.gov manages users by...
+
+This is where we document the control

@@ -8,12 +8,15 @@ tags: [LATO, FEDRAMP]
 items:
   - item: 'Account Management'
     todo: 10
-    doing: 30
-    done: 60   
+    doing: 20
+    done: 80   
     issues:
     - issue: info #todo, doing, done
       text:
-      url: http://github.com/jjediny             
+      url:    
+    - issue: doing #todo, doing, done
+      text: 
+      url: https://github.com/GSA/catalog-app/issues/15
     contacts:
     - contact: Data.gov
       role: Owner
