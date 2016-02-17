@@ -6,7 +6,7 @@ number: AC-2i
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: ' Authorizes access to the information system based on 1. A valid access authorization 2. Intended system usage 3. Other attributes as required by the organization or associated missions/business functions.'
     todo: 20
     doing: 10
     done: 70   

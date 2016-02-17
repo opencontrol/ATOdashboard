@@ -1,12 +1,12 @@
 ---
 layout: default
-title: ""
+title: "Access Enforcement"
 family: AC
 number: AC-3
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'The information system enforces approved authorizations for logical access to information and system resources in accordance with applicable access control policies.'
     todo: 20
     doing: 10
     done: 70   

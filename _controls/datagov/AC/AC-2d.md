@@ -6,7 +6,7 @@ number: AC-2d
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account'
     todo: 20
     doing: 10
     done: 70   

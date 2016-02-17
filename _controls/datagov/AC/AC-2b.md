@@ -6,7 +6,7 @@ number: AC-2b
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'Assigns account managers for information system accounts'
     todo: 20
     doing: 10
     done: 70   

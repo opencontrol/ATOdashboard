@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "AU"
+title: ""
 family: AU
 number: AU-2b
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'Coordinates the security audit function with other organizational entities requiring audit-related information to enhance mutual support and to help guide the selection of auditable events'
     todo: 20
     doing: 10
     done: 70   

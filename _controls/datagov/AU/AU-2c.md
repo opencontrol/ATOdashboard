@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "AU"
+title: ""
 family: AU
 number: AU-2c
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'Provides a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents'
     todo: 20
     doing: 10
     done: 70   
@@ -18,4 +18,3 @@ items:
     - contact: Data.gov
       role:
 ---
-content

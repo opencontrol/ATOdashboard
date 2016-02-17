@@ -6,7 +6,7 @@ number: AC-2a
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'AC-2'
+  - item: 'Account Management'
     todo: 10
     doing: 30
     done: 60   

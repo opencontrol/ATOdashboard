@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "AU"
+title: "Audit Events"
 family: AU
 number: AU-2
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'Audit Events'
     todo: 20
     doing: 10
     done: 70   

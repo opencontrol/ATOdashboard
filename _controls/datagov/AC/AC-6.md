@@ -1,12 +1,12 @@
 ---
 layout: default
-title: ""
+title: "Least Privilege"
 family: AC
 number: AC-6
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'The organization General Federal Agency employs the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) which are necessary to accomplish assigned tasks in accordance with organizational missions and business functions.'
     todo: 20
     doing: 10
     done: 70   

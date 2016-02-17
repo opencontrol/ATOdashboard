@@ -6,7 +6,7 @@ number: AC-2c
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'Establishes conditions for group and role membership'
     todo: 20
     doing: 10
     done: 70   

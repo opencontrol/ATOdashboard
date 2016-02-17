@@ -6,7 +6,7 @@ number: AC-2j
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'Reviews accounts for compliance with account management requirements organization-defined frequency'
     todo: 20
     doing: 10
     done: 70   
@@ -18,6 +18,8 @@ items:
     - contact: Data.gov
       role:
 ---
+`Assignment: organization-defined frequency`
+
 `18F reviews user and system accounts for compliance with account management requirements at least on an annual basis.  Currently, system and user accounts are being monitored manually on a monthly basis and programmatically on a continuous basis.`
 
 ```

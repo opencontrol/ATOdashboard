@@ -6,7 +6,7 @@ number: AC-2a
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: "Identifies and selects the following types of information system accounts to support organizational missions/business functions"
     todo: 20
     doing: 10
     done: 70   
@@ -18,6 +18,8 @@ items:
     - contact: Data.gov
       role:
 ---
+`Assignment: organization-defined information system account types`
+
 ## Applications and Websites
 `18F identifies and selects the following types of information system accounts to support organizational missions/business functions: individual, group, system, application.`
 

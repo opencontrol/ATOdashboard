@@ -6,7 +6,7 @@ number: AC-2h
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'Notifies account managers 1. When accounts are no longer required 2. When users are terminated or transferred 3. When individual information system usage or need-to-know changes'
     todo: 20
     doing: 10
     done: 70   

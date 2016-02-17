@@ -6,7 +6,7 @@ number: AC-2g
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Applications and Websites'
+  - item: 'Monitors the use of information system accounts'
     todo: 20
     doing: 10
     done: 70   
