@@ -1,7 +1,7 @@
+#   pub_date: "2015-01-09T08:26:01.231-05:00"
+#  schemaLocation: "http://scap.nist.gov/schema/sp800-53/feed/2.0 http://scap.nist.gov/schema/sp800-53/feed/2.0/sp800-53-feed_2.0.xsd"
+#  documentLocation: "https://nvd.nist.gov/static/feeds/xml/sp80053/rev4/800-53a-objectives.xml"
 ---
-  pub_date: "2015-01-09T08:26:01.231-05:00"
-  schemaLocation: "http://scap.nist.gov/schema/sp800-53/feed/2.0 http://scap.nist.gov/schema/sp800-53/feed/2.0/sp800-53-feed_2.0.xsd"
-  documentLocation: "https://nvd.nist.gov/static/feeds/xml/sp80053/rev4/800-53a-objectives.xml"
   control:
     -
       family: "ACCESS CONTROL"

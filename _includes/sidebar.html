@@ -1,22 +1,4 @@
 <h4>Authority to Operate (ATO) Dashboard</h4>
-<p color="red">PLACEHOLDER for modal help window</p>
-<div class="list-group">
-  <a href="#AC" class="list-group-item">Access Control<span class="badge">AC</span></a>
-  <a href="#AU" class="list-group-item">Audit and Accountability<span class="badge">AU</span></a>
-  <a href="#AT" class="list-group-item">Awareness and Training<span class="badge">AT</span></a>
-  <a href="#CA" class="list-group-item">Security Assessment and Authorization<span class="badge">CA</span></a>
-  <a href="#CM" class="list-group-item">Configuration Management<span class="badge">CM</span></a>
-  <a href="#CP" class="list-group-item">Contingency Planning<span class="badge">CP</span></a>
-  <a href="#IA" class="list-group-item">Identification and Authentication<span class="badge">IA</span></a>
-  <a href="#IR" class="list-group-item">Incident Response<span class="badge">IR</span></a>
-  <a href="#MA" class="list-group-item">Maintenance<span class="badge">MA</span></a>
-  <a href="#MP" class="list-group-item">Media Protection<span class="badge">MP</span></a>
-  <a href="#PS" class="list-group-item">Personnel Security<span class="badge">PS</span></a>
-  <a href="#PE" class="list-group-item">Physical and Environmental Protection<span class="badge">PE</span></a>
-  <a href="#PL" class="list-group-item">Planning<span class="badge">PL</span></a>
-  <a href="#PM" class="list-group-item">Program Management<span class="badge">PM</span></a>
-  <a href="#RA" class="list-group-item">Risk Assessment<span class="badge">RA</span></a>
-  <a href="#SC" class="list-group-item">System and Communications Protection<span class="badge">SC</span></a>
-  <a href="#SI" class="list-group-item">System and Information Integrity<span class="badge">SI</span></a>
-  <a href="#SA" class="list-group-item">System and Services Acquisition<span class="badge">SA</span></a>
-</div>
+{% for item in site.data.tabs %}
+<span class="label label-default">{{ item.short }}= {{ item.name }}</span>
+{% endfor %}

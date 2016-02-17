@@ -6,13 +6,8 @@ number: AC-2a
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-<<<<<<< HEAD
   - item: "Identifies and selects the following types of information system accounts to support organizational missions/business functions"
-    todo: 20
-=======
-  - item: 'Applications and Websites'
     todo: 10
->>>>>>> origin/gh-pages
     doing: 10
     done: 80   
     issues:

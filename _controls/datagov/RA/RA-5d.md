@@ -6,7 +6,7 @@ number: RA-5d
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-  - item: 'Application Vulnerability Scanning'
+  - item: ''
     todo: 20
     doing: 10
     done: 70   

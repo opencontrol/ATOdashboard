@@ -1,0 +1,36 @@
+- short: AC
+  name: "Access Control"
+- short: AU
+  name: "Audit and Accountability"
+#- short: AT
+#  name: "Awareness and Training"
+- short: CA
+  name: "Security Assessment and Authorization"
+- short: CM
+  name: "Configuration Management"
+#- short: CP
+#  name: "Contingency Planning"
+- short: IA
+  name: "Identification and Authentication"
+#- short: IR
+#  name: "Incident Response"
+#- short: MA
+#  name: "Maintenance"
+#- short: MP
+#  name: "Media Protection"
+#- short: PS
+#  name: "Personnel Security"
+#- short: PE
+#  name: "Physical and Environmental Protection"
+- short: PL
+  name: "Planning"
+#- short: PM
+#  name: "Program Management"
+- short: RA
+  name: "Risk Assessment"
+- short: SA
+  name: "System and Services Acquisition"
+- short: SC
+  name: "System and Communications Protection"
+- short: SI
+  name: "System and Information Integrity"

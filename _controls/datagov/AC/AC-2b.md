@@ -6,17 +6,10 @@ number: AC-2b
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
-<<<<<<< HEAD
   - item: 'Assigns account managers for information system accounts'
     todo: 20
     doing: 10
     done: 70   
-=======
-  - item: 'Applications and Websites'
-    todo: 0
-    doing: 0
-    done: 100   
->>>>>>> origin/gh-pages
     issues:
     - issue: "info" #info, todo, doing, done
       text:
