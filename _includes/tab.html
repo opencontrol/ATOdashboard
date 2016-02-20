@@ -1,7 +1,9 @@
 <ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#intro">Intro</a></li>
   {% for item in site.data.tabs %}
-  <li><a data-toggle="tab" href="#{{ item.short }}">{{ item.short }}</a></li>
+    {% if item.grouping == 'datagov' %}
+    <li><a data-toggle="tab" href="#{{ item.family }}">{{ item.family }}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
 <div class="tab-content">
@@ -9,8 +11,8 @@
       {% include intro.html %}
   </div>
   {% for item in site.data.tabs %}
-  <div id="{{ item.short }}" class="tab-pane fade">
-      {% include {{ item.short }}.html %}
+  <div id="{{ item.family }}" class="tab-pane fade">
+      {% include {{ item.family }}.html %}
   </div>
   {% endfor %}
 </div>

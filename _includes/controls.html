@@ -1,5 +1,5 @@
-<h3>{{ site.data.alerts.label_default }}{{ control.number }}{{ site.data.alerts.label_end }}{{ control.title }}</h3>
-    {% for item in control.items %}
+<h3>{{ site.data.alerts.label_default }}{{ page.number }}{{ site.data.alerts.label_end }}{{ page.title }}</h3>
+    {% for item in page.items %}
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">{{ item.item }}</h3><br>

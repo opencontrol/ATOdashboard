@@ -5,17 +5,12 @@
 </head>
 <body>
 {% include nav_top.html %}
-
 <div class="container">
   <div class="col-sm-9 col-sm-offset-4 col-md-10 main">
-    {% if page.number %}
-    {% include controls.html %}
-    {% endif %}
-
-    {{ content }}
+    {% include tab.html %}
   </div>
   <div class="col-sm-3 col-md-2 sidebar">
-    
+    {% include sidebar.html %}
   </div>
 </div>
 </body>
