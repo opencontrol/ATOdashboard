@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+</head>
+<body>
+{% include nav_top.html %}
+
+<div class="container">
+  <div class="col-sm-9 col-sm-offset-4 col-md-10 main">
+    {{ content }}
+    <ul>
+    {% for control in site.controls %}
+        {% if control.family == page.family %}
+            <li><a href="./{{ control.number }}">{{ control.number }}</a></li>
+        {% endif %}
+    {% endfor %}
+    <ul>
+  </div>
+  <div class="col-sm-3 col-md-2 sidebar">
+    
+  </div>
+</div>
+</body>
+{% if site.google_analytics %}
+{% include google_analytics.html %}
+{% endif %}
+</html>
