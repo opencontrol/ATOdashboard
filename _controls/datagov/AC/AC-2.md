@@ -3,7 +3,7 @@ layout: default
 title: "Account Management"
 permalink: /AC-2
 family: AC
-number: AC-2a
+number: AC-2
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
