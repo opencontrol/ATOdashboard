@@ -1,4 +1,9 @@
-<h4>Authority to Operate (ATO) Dashboard</h4>
-{% for item in site.data.tabs %}
-<span class="label label-default">{{ item.family }}= {{ item.name }}</span>
-{% endfor %}
+    <ul>
+    {% for control in site.controls %}
+        {% if control.family == page.family %}
+            {% if control.number %}
+                <li><a href="./{{ control.number }}">{{ control.number }}</a></li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    </ul>
