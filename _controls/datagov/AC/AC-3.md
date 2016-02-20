@@ -3,6 +3,7 @@ layout: default
 title: "Access Enforcement"
 family: AC
 number: AC-3
+permalink: /AC-3
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

@@ -3,6 +3,7 @@ layout: default
 title: "CA"
 family: CA
 number: CA-8
+permalink: /CA-8
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

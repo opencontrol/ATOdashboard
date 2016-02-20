@@ -3,6 +3,7 @@ layout: default
 title: ""
 family: PL
 number: PL-8a
+permalink: /PL-8a
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

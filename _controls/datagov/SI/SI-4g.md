@@ -3,6 +3,7 @@ layout: default
 title: ""
 family: SI
 number: SI-4g
+permalink: /SI-4g
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

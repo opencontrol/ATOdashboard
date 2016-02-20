@@ -3,6 +3,7 @@ layout: default
 title: "Audit Review, Analysis, And Reporting"
 family: AU
 number: AU-6
+permalink: /AU-6
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

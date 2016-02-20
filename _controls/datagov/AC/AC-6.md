@@ -3,6 +3,7 @@ layout: default
 title: "Least Privilege"
 family: AC
 number: AC-6
+permalink: /AC-6
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

@@ -3,6 +3,7 @@ layout: default
 title: ""
 family: SC
 number: SC-7a
+permalink: /SC-7a
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

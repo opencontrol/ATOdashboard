@@ -3,6 +3,7 @@ layout: default
 title: "Information System Component Inventory"
 family: CM
 number: CM-8a
+permalink: /CM-8a
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

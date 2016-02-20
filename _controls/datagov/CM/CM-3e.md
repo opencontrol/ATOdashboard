@@ -3,6 +3,7 @@ layout: default
 title: "CM"
 family: CM
 number: CM-3e
+permalink: /CM-3e
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

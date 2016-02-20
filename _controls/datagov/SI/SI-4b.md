@@ -3,6 +3,7 @@ layout: default
 title: ""
 family: SI
 number: SI-4b
+permalink: /SI-10
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

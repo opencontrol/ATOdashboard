@@ -3,6 +3,7 @@ layout: default
 title: ""
 family: SI
 number: SI-4e
+permalink: /SI-4e
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

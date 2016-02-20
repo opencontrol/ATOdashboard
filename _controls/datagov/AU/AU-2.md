@@ -3,6 +3,7 @@ layout: default
 title: "Audit Events"
 family: AU
 number: AU-2
+permalink: /AU-2
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

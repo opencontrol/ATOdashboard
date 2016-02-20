@@ -3,6 +3,7 @@ layout: default
 title: ""
 family: RA
 number: RA-5d
+permalink: /RA-5d
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

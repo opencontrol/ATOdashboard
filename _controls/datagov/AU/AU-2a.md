@@ -3,6 +3,7 @@ layout: default
 title: "AU"
 family: AU
 number: AU-2a
+permalink: /AU-2a
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:

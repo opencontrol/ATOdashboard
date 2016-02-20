@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Account Management"
+permalink: /AC-2
 family: AC
 number: AC-2a
 boundary: [application]
