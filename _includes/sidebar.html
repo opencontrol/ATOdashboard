@@ -33,18 +33,15 @@
 
 {% for item in site.data.tabs %}  
 
-    {% 
-        assign todos = 0 
-        assign doings = 0 
-        assign dones = 0
-        assign items = 0
+    {% assign todos = 0 %}
+    {% assign doings = 0 %}
+    {% assign dones = 0 %}
+    {% assign items = 0 %}
 
-        assign issues_total = 0 
-        assign todos_percent = 0 
-        assign doings_percent = 0
-        assign dones_percent = 0
-
-    %}
+    {% assign issues_total = 0 %}
+    {% assign todos_percent = 0 %}
+    {% assign doings_percent = 0 %}
+    {% assign dones_percent = 0 %}
 
     {% if item.grouping == 'datagov' %}
 
