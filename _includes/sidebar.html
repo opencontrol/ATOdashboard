@@ -1,9 +1,9 @@
-    <ul>
+    <div class="list-group">
     {% for control in site.controls %}
         {% if control.family == page.family %}
             {% if control.number %}
-                <li><a href="./{{ control.number }}">{{ control.number }}</a></li>
+                <a class="list-group-item" href="./{{ control.number }}">{{ control.number }}</a>
             {% endif %}
         {% endif %}
     {% endfor %}
-    </ul>
+    </div>

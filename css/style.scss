@@ -12,6 +12,11 @@ body {
   padding-top: 50px;
 }
 
+body div.container .main,
+body div.container .sidebar {
+  margin-top : 2em;
+}
+
 .content {
   padding: 40px 15px;
 }
