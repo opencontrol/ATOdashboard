@@ -1,9 +1,94 @@
+<div class="panel panel-default">
+{% if page.family %}
+    {% for item in site.data.tabs %}
+         {% if item.family == page.family %}
+            <a class="sidebar-panel-heading" href="./{{ item.family }}">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {{ item.family }} - {{ item.name }}     
+                    </h3>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+
     <div class="list-group">
     {% for control in site.controls %}
         {% if control.family == page.family %}
+            {% assign selected = "" %}
             {% if control.number %}
-                <a class="list-group-item" href="./{{ control.number }}">{{ control.number }}</a>
+                {% if control.number == page.number %}
+                    {% assign selected = "active" %}
+                {% endif %}   
+                <a class="list-group-item {{ selected }}" href="./{{ control.number }}">{{ control.number }}</a>
             {% endif %}
         {% endif %}
     {% endfor %}
     </div>
+
+{% else %}
+
+    <div class="list-group">
+
+
+{% for item in site.data.tabs %}  
+
+    {% 
+        assign todos = 0 
+        assign doings = 0 
+        assign dones = 0
+        assign items = 0
+
+        assign issues_total = 0 
+        assign todos_percent = 0 
+        assign doings_percent = 0
+        assign dones_percent = 0
+
+    %}
+
+    {% if item.grouping == 'datagov' %}
+
+        {% for control in site.controls %}        
+            {% if control.family == item.family %} 
+                {% for item in control.items %}                
+                    {% assign items = items | plus:1 %} 
+                    {% assign todos = todos | plus:item.todo %} 
+                    {% assign doings = doings | plus:item.doing %} 
+                    {% assign dones = dones | plus:item.done %}  
+                {% endfor %}   
+            {% endif %}
+
+        {% endfor %}
+
+        {% assign issues_total = todos | plus:doings | plus:dones | round: 1 %} 
+
+        {% assign todos_percent = todos | divided_by:issues_total | times:100 %}
+        {% assign doings_percent = doings | divided_by:issues_total | times:100 %}    
+        {% assign dones_percent = dones | divided_by:issues_total | times:100 %}    
+
+
+        <a class="list-group-item" href="./{{ item.family }}">
+            <span class="badge">{{ items }}</span>
+            {{ item.family }} - {{ item.name }}
+
+            <div class="progress">
+              {{ site.data.alerts.progress_done }}{{ dones_percent }}{{ site.data.alerts.progress_end}}
+              {{ site.data.alerts.progress_doing }}{{ doings_percent }}{{ site.data.alerts.progress_end }}
+              {{ site.data.alerts.progress_todo }}{{ todos_percent }}{{ site.data.alerts.progress_end }}
+            </div>
+            
+        </a>
+
+    {% else %}
+        <a class="list-group-item disabled">{{ item.family }} - {{ item.name }}</a>
+    {% endif %}
+
+
+{% endfor %}
+
+
+    </div>
+
+
+{% endif %}    
+</div>

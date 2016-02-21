@@ -12,6 +12,16 @@
   </div>  
 
   <div class="col-sm-12 col-md-9 main">
+
+    {% for item in site.data.tabs %}
+         {% if item.family == page.family %}
+            <h1>
+                {{ item.family }} - {{ item.name }}     
+            </h1>
+        {% endif %}
+    {% endfor %}
+
+
     {{ content }}
 
     {% 
@@ -46,16 +56,19 @@
           {{ site.data.alerts.progress_todo }}{{ todos_percent }}{{ site.data.alerts.progress_end }}
         </div>
 
+    <hr style="margin-bottom : 5em">
+
     {% for control in site.controls %}
         {% if control.family == page.family %}
             
 
     <h3>
+        <a href="./{{ control.number }}">
         {{ site.data.alerts.label_default }}
             {{ control.number }}
         {{ site.data.alerts.label_end }}
-
-        {{ control.title }}
+        </a>
+        &nbsp; {{ control.title }}
     </h3>
     
     {% for item in control.items %}

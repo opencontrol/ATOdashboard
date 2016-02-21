@@ -21,9 +21,14 @@ body div.container .sidebar {
   padding: 40px 15px;
 }
 
-.sidebar {
-
+.sidebar-panel-heading .panel-heading {
+  background-color : #f5f5f5;
 }
+
+.sidebar-panel-heading:hover {
+  text-decoration : none; 
+}
+
 
 /* tab color */
 .nav-tabs>li>a {

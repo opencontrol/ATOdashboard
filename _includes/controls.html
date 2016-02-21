@@ -1,4 +1,11 @@
-<h3>{{ site.data.alerts.label_default }}{{ page.number }}{{ site.data.alerts.label_end }}{{ page.title }}</h3>
+
+    <h3>
+        {{ site.data.alerts.label_default }}
+            {{ page.number }}
+        {{ site.data.alerts.label_end }}
+        &nbsp; {{ page.title }}
+    </h3>
+
     {% for item in page.items %}
     <div class="panel panel-default">
       <div class="panel-heading">
