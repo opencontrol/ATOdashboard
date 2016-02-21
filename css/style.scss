@@ -29,6 +29,45 @@ body div.container .sidebar {
   text-decoration : none; 
 }
 
+.btn.no-click:hover {
+  cursor : default !important;
+}
+
+.metric-badge {
+  border-radius : 4px;
+  padding : 6px 12px;
+  color : #fff;
+  margin-right : 1em;
+}
+
+.metric-badge .badge {
+  background-color : #fff;
+}
+
+.metric-badge.bg-success {
+  background-color : $brand-success;
+}
+
+.metric-badge.bg-success .badge {  
+  color : $brand-success;
+}
+
+.metric-badge.bg-warning {
+  background-color : $brand-warning;
+}
+
+.metric-badge.bg-warning .badge {  
+  color : $brand-warning;
+}
+
+.metric-badge.bg-danger {
+  background-color : $brand-danger;
+}
+
+.metric-badge.bg-danger .badge {  
+  color : $brand-danger;
+}
+
 
 /* tab color */
 .nav-tabs>li>a {

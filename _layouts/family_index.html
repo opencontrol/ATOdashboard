@@ -56,45 +56,57 @@
           {{ site.data.alerts.progress_todo }}{{ todos_percent }}{{ site.data.alerts.progress_end }}
         </div>
 
+    
+
+<span class="metric-badge bg-success">
+  Done <span class="badge">{{ dones }}</span>
+</span>
+
+<span class="metric-badge bg-warning">
+  Doing <span class="badge">{{ doings }}</span>
+</span>
+
+<span class="metric-badge bg-danger">
+  Todo <span class="badge">{{ todos }}</span>
+</span>
+
+
     <hr style="margin-bottom : 5em">
 
     {% for control in site.controls %}
         {% if control.family == page.family %}
-            
+            {% if control.number %}
+                <h3>
+                    <a href="./{{ control.number }}">
+                    {{ site.data.alerts.label_default }}
+                        {{ control.number }}
+                    {{ site.data.alerts.label_end }}
+                    </a>
+                    &nbsp; {{ control.title }}
+                </h3>
+                
+                {% for item in control.items %}
+                    <div class="panel panel-default">
 
-    <h3>
-        <a href="./{{ control.number }}">
-        {{ site.data.alerts.label_default }}
-            {{ control.number }}
-        {{ site.data.alerts.label_end }}
-        </a>
-        &nbsp; {{ control.title }}
-    </h3>
-    
-    {% for item in control.items %}
-    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">{{ item.item }}</h3><br>
+                        <div class="progress">
+                          {{ site.data.alerts.progress_done }}{{ item.done }}{{ site.data.alerts.progress_end}}
+                          {{ site.data.alerts.progress_doing }}{{ item.doing }}{{ site.data.alerts.progress_end }}
+                          {{ site.data.alerts.progress_todo }}{{ item.todo }}{{ site.data.alerts.progress_end }}
+                        </div>
 
-      <div class="panel-heading">
-        <h3 class="panel-title">{{ item.item }}</h3><br>
-        <div class="progress">
-          {{ site.data.alerts.progress_done }}{{ item.done }}{{ site.data.alerts.progress_end}}
-          {{ site.data.alerts.progress_doing }}{{ item.doing }}{{ site.data.alerts.progress_end }}
-          {{ site.data.alerts.progress_todo }}{{ item.todo }}{{ site.data.alerts.progress_end }}
-        </div>
-
-        {% for issue in item.issues %}
-        {% if issue.issue == 'info' %}<p>{{ site.data.alerts.alert_info }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alerts.alert_end }}</p>{% endif %}
-        {% if issue.issue == 'todo' %}<p>{{ site.data.alerts.alert_todo }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alerts.alert_end }}</p>{% endif %}
-        {% if issue.issue == 'doing' %}<p>{{ site.data.alerts.alert_doing }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alerts.alert_end }}</p>{% endif %}
-        {% if issue.issue == 'done' %}<p>{{ site.data.alerts.alert_done }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alert_end }}</p>{% endif %}
-        {% endfor %}
-      </div>
-      
-    </div>
-    {% endfor %}
-
-
-
+                        {% for issue in item.issues %}
+                        {% if issue.issue == 'info' %}<p>{{ site.data.alerts.alert_info }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alerts.alert_end }}</p>{% endif %}
+                        {% if issue.issue == 'todo' %}<p>{{ site.data.alerts.alert_todo }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alerts.alert_end }}</p>{% endif %}
+                        {% if issue.issue == 'doing' %}<p>{{ site.data.alerts.alert_doing }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alerts.alert_end }}</p>{% endif %}
+                        {% if issue.issue == 'done' %}<p>{{ site.data.alerts.alert_done }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alert_end }}</p>{% endif %}
+                        {% endfor %}
+                      </div>
+                      
+                    </div>
+                {% endfor %}
+            {% endif %}
         {% endif %}
     {% endfor %}
 
