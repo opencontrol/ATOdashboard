@@ -9,7 +9,7 @@ tags: [LATO, FEDRAMP]
 items:
   - item: 'Account Management'
     todo: 10
-    doing: 20
+    doing: 10
     done: 80   
     issues:
     - issue: info #todo, doing, done

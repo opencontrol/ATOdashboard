@@ -14,6 +14,36 @@
   <div class="col-sm-12 col-md-9 main">
     {{ content }}
 
+    {% 
+        assign todos = 0 
+        assign doings = 0 
+        assign dones = 0
+        assign items = 0 
+    %}
+
+    {% for control in site.controls %}
+        {% if control.family == page.family %}        
+            {% for item in control.items %}                
+                {% assign items = items | plus:1 %} 
+                {% assign todos = todos | plus:item.todo %} 
+                {% assign doings = doings | plus:item.doing %} 
+                {% assign dones = dones | plus:item.done %}  
+            {% endfor %}                          
+        {% endif %}
+    {% endfor %}
+
+    {% assign todos_percent = todos | divided_by:items %}
+    {% assign doings_percent = doings | divided_by:items %}    
+    {% assign dones_percent = dones | divided_by:items %}    
+
+    <h2>Total Progress on {{ items }} Items</h2>
+
+        <div class="progress">
+          {{ site.data.alerts.progress_done }}{{ dones_percent }}{{ site.data.alerts.progress_end}}
+          {{ site.data.alerts.progress_doing }}{{ doings_percent }}{{ site.data.alerts.progress_end }}
+          {{ site.data.alerts.progress_todo }}{{ todos_percent }}{{ site.data.alerts.progress_end }}
+        </div>
+
     {% for control in site.controls %}
         {% if control.family == page.family %}
             
@@ -22,7 +52,7 @@
         {{ site.data.alerts.label_default }}
             {{ control.number }}
         {{ site.data.alerts.label_end }}
-        
+
         {{ control.title }}
     </h3>
     
