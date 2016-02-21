@@ -20,7 +20,7 @@
                 {% if control.number == page.number %}
                     {% assign selected = "active" %}
                 {% endif %}   
-                <a class="list-group-item {{ selected }}" href="./{{ control.number }}">{{ control.number }}</a>
+                <a class="list-group-item {{ selected }}" href=".{{ control.permalink }}">{{ control.number }}</a>
             {% endif %}
         {% endif %}
     {% endfor %}
@@ -76,7 +76,7 @@
               {{ site.data.alerts.progress_doing }}{{ doings_percent }}{{ site.data.alerts.progress_end }}
               {{ site.data.alerts.progress_todo }}{{ todos_percent }}{{ site.data.alerts.progress_end }}
             </div>
-            
+
         </a>
 
     {% else %}
