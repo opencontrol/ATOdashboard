@@ -18,7 +18,7 @@
         assign todos = 0 
         assign doings = 0 
         assign dones = 0
-        assign items = 0 
+        assign items = 0
     %}
 
     {% for control in site.controls %}
@@ -32,9 +32,11 @@
         {% endif %}
     {% endfor %}
 
-    {% assign todos_percent = todos | divided_by:items %}
-    {% assign doings_percent = doings | divided_by:items %}    
-    {% assign dones_percent = dones | divided_by:items %}    
+    {% assign issues_total = todos | plus:doings | plus:dones | round: 1 %} 
+
+    {% assign todos_percent = todos | divided_by:issues_total | times:100 %}
+    {% assign doings_percent = doings | divided_by:issues_total | times:100 %}    
+    {% assign dones_percent = dones | divided_by:issues_total | times:100 %}    
 
     <h2>Total Progress on {{ items }} Items</h2>
 
