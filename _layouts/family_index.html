@@ -9,14 +9,14 @@
 <div class="container">
   <div class="col-sm-12 col-md-3 sidebar">
     {% include sidebar.html %}
-  </div>  
+  </div>
 
   <div class="col-sm-12 col-md-9 main">
 
     {% for item in site.data.tabs %}
          {% if item.family == page.family %}
             <h1>
-                {{ item.family }} - {{ item.name }}     
+                {{ item.family }} - {{ item.name }}
             </h1>
         {% endif %}
     {% endfor %}
@@ -24,29 +24,29 @@
 
     {{ content }}
 
-    {% 
-        assign todos = 0 
-        assign doings = 0 
+    {%
+        assign todos = 0
+        assign doings = 0
         assign dones = 0
         assign items = 0
     %}
 
     {% for control in site.controls %}
-        {% if control.family == page.family %}        
-            {% for item in control.items %}                
-                {% assign items = items | plus:1 %} 
-                {% assign todos = todos | plus:item.todo %} 
-                {% assign doings = doings | plus:item.doing %} 
-                {% assign dones = dones | plus:item.done %}  
-            {% endfor %}                          
+        {% if control.family == page.family %}
+            {% for item in control.items %}
+                {% assign items = items | plus:1 %}
+                {% assign todos = todos | plus:item.todo %}
+                {% assign doings = doings | plus:item.doing %}
+                {% assign dones = dones | plus:item.done %}
+            {% endfor %}
         {% endif %}
     {% endfor %}
 
-    {% assign issues_total = todos | plus:doings | plus:dones | round: 1 %} 
+    {% assign issues_total = todos | plus:doings | plus:dones | round: 1 %}
 
     {% assign todos_percent = todos | divided_by:issues_total | times:100 %}
-    {% assign doings_percent = doings | divided_by:issues_total | times:100 %}    
-    {% assign dones_percent = dones | divided_by:issues_total | times:100 %}    
+    {% assign doings_percent = doings | divided_by:issues_total | times:100 %}
+    {% assign dones_percent = dones | divided_by:issues_total | times:100 %}
 
     <h2>Total Progress on {{ items }} Items</h2>
 
@@ -56,7 +56,7 @@
           {{ site.data.alerts.progress_todo }}{{ todos_percent }}{{ site.data.alerts.progress_end }}
         </div>
 
-    
+
 
 <span class="metric-badge bg-success">
   Done <span class="badge">{{ dones }}</span>
@@ -84,10 +84,9 @@
                     </a>
                     &nbsp; {{ control.title }}
                 </h3>
-                
+
                 {% for item in control.items %}
                     <div class="panel panel-default">
-
                       <div class="panel-heading">
                         <h3 class="panel-title">{{ item.item }}</h3><br>
                         <div class="progress">
@@ -103,7 +102,9 @@
                         {% if issue.issue == 'done' %}<p>{{ site.data.alerts.alert_done }}<a href="{{ issue.url }}" target="_blank">{% if issue.text %}{{ issue.text }}{% else %}{{ issue.url }}{% endif %}</a>{{ site.data.alert_end }}</p>{% endif %}
                         {% endfor %}
                       </div>
-                      
+                      <div class="panel-body">
+                        <a class="btn btn-primary pull-right" href=".{{ control.permalink }}">Read</a>
+                      </div>
                     </div>
                 {% endfor %}
             {% endif %}

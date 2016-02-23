@@ -22,3 +22,7 @@ collections:
   controls:
     output: true
     permalink: /controls/:path/
+  system:
+    output: true
+    layout: default
+    permalink: /system/:path/

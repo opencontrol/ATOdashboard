@@ -3,7 +3,7 @@ layout: default
 title: ""
 family: AC
 number: AC-2b
-permalink: AC-2b
+permalink: /AC-2b
 boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
