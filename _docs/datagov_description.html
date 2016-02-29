@@ -1,311 +1,186 @@
-1 Introduction
+# Introduction
 
-This document serves as a text companion to the GSA Data.gov AWS Architecture diagram
-
-(GSA_Data-gov_AWS_Architecture.pdf) that illustrates an overall architectural approach to
-
+This document serves as a text companion to the GSA Data.gov AWS Architecture diagram that illustrates an overall architectural approach to
 migrating Data.gov and its related applications into the cloud. Also referenced is the architecture
+for cloud.gov
 
-for cloud.gov (cf-system-components.png).
+[Overview Diagram]cf-system-components.png).
 
-2 CloudFoundry and Docker
+# CloudFoundry and Docker
 
-The data.gov environment will make use of both CloudFoundry, via the Cloud.gov platform, and
-
-Docker.
-
+The data.gov environment will make use of both CloudFoundry, via the Cloud.gov platform, and Docker.
 Docker containers wrap up a piece of software in a complete filesystem that contains everything
-
 it needs to run: code, runtime, system tools, system libraries – or anything that can be installed
-
 on a server. This guarantees that it will always run the same, regardless of the environment in
-
 which it is running.  Since Docker is limited to only a single server, Data.gov will be utilizing
+Docker Swarm in order to cluster the Docker services and ensure redundancy and high-availability.
 
-Docker Swarm in order to cluster the Docker services and ensure redundancy and high-
-
-availability. Docker Swarm is native clustering for Docker. It turns a pool of Docker hosts into a
-
+Docker Swarm is native clustering for Docker. It turns a pool of Docker hosts into a
 single, virtual Docker host. Because Docker Swarm serves the standard Docker API, any tool
-
-that already communicates with a Docker daemon can use Swarm to transparently scale to
-
-multiple hosts.
+that already communicates with a Docker daemon can use Swarm to transparently scale to multiple hosts.
 
 CloudFoundry platforms allow anyone to deploy network applications or services and make
-
 them available to the world in a few minutes. When an app becomes popular, the cloud easily
-
 scales it to handle more traffic, replacing with a few keystrokes the build-out and migration
-
 efforts that once took months.
 
 Docker is being utilized for the CKAN portions of the application due to the fact that
-
 applications developed for CloudFoundry are required to be stateless because cloud controllers
-
 will destroy and re-create container images in case of an unhealthy app, running out of memory,
-
 or a deployment of a new version of the code.  Because CKAN relies on data persistence, the
-
 decision was made to use Docker which will allow the original monolithic architecture to begin
-
 to be broken up and ensure that while it is using different technologies both parts of the
-
 application, PHP and CKAN, will use very similar development and deployment models.
 
-3 Region and VPC Layout
+# Region and Virtual Private Cloud Layout
 
 The initial architecture specifies the use of a single Amazon Region to contain all of the data.gov
-
 infrastructure.  A region is a collection of Availability Zones (data centers) that are in close
-
 geographic proximity.  Data.gov will use the US-East region.  If necessary, the use of a second
-
 region may be added as a Disaster Recovery (DR) site.
 
 Each region within Amazon contains several Availability Zones (AZs), or data centers, which
-
 are physically separate from each other but are connected with high-speed network links.  The
-
 proposed architecture includes the use of a single AZ within US-East. With the applications
-
 being virtualized into Containers, should disaster affect that Availability Zone it can easily be
-
 moved into a second AZ or Region.
 
 The proposed architecture consists of two Amazon Virtual Private Clouds (VPCs).  A VPC
-
 defines a network that is logically isolated from other resources within an AWS account.  There
-
-February 4, 2016 3
-
 is no connectivity between by VPCs by default.  To allow connectivity between VPCs, a peering
-
 connection must be created to link the VPCs and routes must be defined in each VPC to direct
-
 traffic across the peering connection.
 
 The two VPCs for Data.gov are:
 
- Data.gov Services.  Contains Docker Swarm services managed by ShipYard to run the
-
-CKAN Applications.
-
- Cloud.gov. Applications run on the cloud.gov VPC will exist as CloudFoundry Warden
-
-Containers as described in the Cloud.gov architecture documentation.  
+1. **Data.gov Services**: Contains Docker Swarm services managed by ShipYard to run the CKAN Applications.
+2. **Cloud.gov**: Applications run on the cloud.gov VPC will exist as CloudFoundry Warden Containers as described in the Cloud.gov architecture documentation.  
 
 To provide access to the public internet, each VPC will also contain its own public sub-network
-
 with servers that have public IP addresses.  The public networks typically contain only Network
-
 Address Translation (NAT) servers and load balancers as well as the Cloud.gov and Docker
-
 traffic routers as described below.
 
 Each VPC will also make usage of the AWS Security Groups, Network Access Control Lists
+(NACLs), as well as routing tables to ensure only approved traffic may enter or exit each VPC and subnet.
 
-(NACLs), as well as routing tables to ensure only approved traffic may enter or exit each VPC
-
-and subnet.
-
-4 System Layout
+# System Layout
 
 AWS offers features and services that enable applications to be deployed in high-availability,
-
 fault-tolerant configurations efficiently and at low cost.  Given this flexibility, applications
-
 should take advantage of this capability wherever and whenever possible.  The architecture
-
 diagram shows how the different pieces of the application will be segmented and where
-
 connections will be made when needed. By utilizing Cloud.gov’s platform as well as Docker
 
 Swarm all applications will be stored as code and configurations in git repositories, which will
-
-enable extremely fast recovery in case of any disaster situation.
-
-Traffic from the public internet encounters an Elastic Load Balancer (ELB) that directs traffic to
-
-Traffic Routers.  In applications running from the Cloud.gov environment this routing is done by
-
-CloudFoundry Routers, and in the Docker Swarm environment this will be controlled via
-
-ShipYard servers.
+enable extremely fast recovery in case of any disaster situation. Traffic from the public internet encounters
+an Elastic Load Balancer (ELB) that directs traffic to Traffic Routers.
+In applications running from the Cloud.gov environment this routing is done by
+CloudFoundry Routers, and in the Docker Swarm environment this will be controlled via ShipYard servers.
 
 Each server is registered with the respective Router, which conducts its health checks on each
-
 individual web server to determine if it can accept traffic.  For sites with fluctuations in web
-
 traffic patterns or with period traffic spikes, scaling via the respective technology can be
-
 considered. Automatic Scaling is a feature of the Cloud.gov platform to ensure that applications
-
 remain available as demand increases. Docker Swarm, for the time being, will require manual
-
 scaling in case of traffic increase.  However, since this is done with simple configuration files,
-
 scaling is almost instantaneous.  With scaling, containers are created as traffic increases and
-
 destroyed as traffic subsides.  Utilization costs are only incurred for running servers, so
-
 organizations only pay for the capacity they actually need.
 
 Data.gov applications require the use of a relational database.  A truly fault-tolerant application
-
 must support replication of data between databases located in multiple data centers.  Licensing
-
 costs for clustering solutions in commercial relational databases can be unacceptably high.
 
 However, Amazon provides the Relational Database Service (RDS).  With RDS, databases can
-
-be spread across multiple availability zones and AWS handles data replication, failover, and fail-
-
-February 4, 2016 4
-
-back.  Applications are given a single logical endpoint to connect to and are unaware that the
-
+be spread across multiple availability zones and AWS handles data replication, failover, and fail-back.
+Applications are given a single logical endpoint to connect to and are unaware that the
 database tier is spread across availability zones. Cloud.gov will supply a RDS MySQL instance
-
 for the Data.gov main site, as well as labs.data.gov. The CKAN applications (catalog.data.gov
-
-and inventory.data.gov) will make use of a PostgreSQL database which will also be housed in
-
-Docker.
+and inventory.data.gov) will make use of a PostgreSQL database which will also be housed in Docker.
 
 The advantage to using the Cloud.gov platform and Docker Swarm is that all non-production
-
 environments will be built similar to the production environments. The slight difference will be
-
 making use of fewer containers in the non-production environment as there would be no
-
 requirement for high-availability, as well as the system having less stress of user traffic.  In the
 
 Cloud.gov platform environments are separated via Organizations and Spaces.  This allows all
-
 data, traffic, and configurations to be completely isolated from one another.  In the same respect,
-
 all environments within Docker will be controlled via Docker configurations with each
+environment having its own Docker Swarm cluster configuration, keeping the environments isolated.
 
-environment having its own Docker Swarm cluster configuration, keeping the environments
-
-isolated.
-
-5 Applications
+# Applications
 
 The architectures proposed for the individual Data.gov, Catalog, Inventory, and Labs systems
-
 differ from the Typical Production System Layout and more closely resemble their current
-
 deployment architecture to facilitate migration into the AWS environment.  Once the
-
 applications have stabilized in the AWS environment, they may be modified to adapt the
-
 resiliency features offered by the Typical Production System Layout.
 
-5.1 Data.gov Website
+## Data.gov Website
 
 The data.gov website is a WordPress application that will be deployed as a Cloud Foundry
-
 application.  Replication, failover, and failover recovery are all handled by the RDS service
-
 which will be managed by the Cloud.gov platform. 
 
 Traffic from the public internet encounters an Elastic Load Balancer (ELB) that directs traffic to
-
 by CloudFoundry Routers.  The ELB and CloudFoundry Routers conduct frequent health checks
-
 to identify which servers are available to accept traffic.
 
-5.2 Inventory
+## Inventory.data.gov
 
 The inventory.data.gov website is a CKAN application which will consist of multiple Docker
-
 containers utilizing Docker Swarm technology orchestrated via ShipYard.  In the event of a loss
-
 of an availability zone, Docker Swarm has the capability of deploying a replacement container
-
 into an unaffected Availability Zone.  The Postgres database will be replicated via Docker
-
 Swarm.  Replication, failover, and failover recovery are all handled by Docker Swarm/ShipYard.
 
 Traffic from the public internet encounters an Elastic Load Balancer (ELB) that directs traffic to
-
 ShipYard. The ELB and Shipyard conduct frequent health checks to identify which servers or
-
 containers are available to accept traffic.
 
-February 4, 2016 5
-
-5.3 Labs
+## Labs.data.gov
 
 The labs.data.gov website is a PHP application that will be deployed as a CloudFoundry
-
 application.  Replication, failover, and failover recovery are all handled by the RDS service
-
 (MySQL) which will be managed by the Cloud.gov platform.   
 
 Traffic from the public internet encounters an Elastic Load Balancer (ELB) that directs traffic to
-
 by CloudFoundry Routers.  The ELB and CloudFoundry Routers conduct frequent health checks
-
 to identify which servers are available to accept traffic.
 
-5.4 Catalog
+## Catalog.data.gov
 
 The catalog.data.gov website is a CKAN application which will consist of multiple Docker
-
 containers utilizing Docker Swarm technology orchestrated via ShipYard.  In the event of a loss
-
 of an availability zone, Docker Swarm has the capability of deploying a replacement container
+into an unaffected Availability Zone. The Postgres database will be replicated via Docker Swarm. 
+Replication, failover, and failover recovery are all handled by Docker Swarm/ShipYard.
 
-into an unaffected Availability Zone. The Postgres database will be replicated via Docker
-
-Swarm.  Replication, failover, and failover recovery are all handled by Docker Swarm/ShipYard.
-
-Traffic from the public internet encounters an Elastic Load Balancer (ELB) that directs traffic to
-
-ShipYard.  The ELB and Shipyard conduct frequent health checks to identify which servers or
-
-containers are available to accept traffic
+Traffic from the public internet encounters an Elastic Load Balancer (ELB) that directs traffic to ShipYard.
+The ELB and Shipyard conduct frequent health checks to identify which servers or containers are available to accept traffic.
 
 The architectures proposed for the individual Data.gov, Catalog, Inventory, and Labs systems are
-
 conceptual designs based on high-level diagrams provided by GSA and may be subject to change
+during implementation.  The proposed architectures are based on the typical production system layout described above.
 
-during implementation.  The proposed architectures are based on the typical production system
-
-layout described above.
-
-6 Shared Services
+## AWS Services
 
 On top of the applications themselves, Data.gov will also make use of the following Shared
 
 Services provided by Amazon Web Services:
 
- VPC NAT Gateway.  The NAT gateway service will be used to enable instances in a
-
+* VPC NAT Gateway: The NAT gateway service will be used to enable instances in a
 private subnet to connect to the Internet or other AWS services, but prevent the Internet
-
 from initiating a connection with those instances.
 
- SSH Jump Box.  The SSH jump box is a Linux server that serves as a single point of
-
+* SSH Jump Box: The SSH jump box is a Linux server that serves as a single point of
 entry for all SSH sessions into the environment.  To gain shell access to any server in the
-
 environment from outside of the AWS environment, a user must connect into this server
-
 and “jump” to the intended server.  The jump server provides a single choke point for
-
 controlling SSH access into the entire infrastructure.  An ELB sits in front of the jump
-
 box to satisfy ATO requirements by logging all attempted SSH connections into the
-
 environment.
 
- Monitoring services.  Due to the ephemeral nature of container services, all monitoring
-
-will be done via AWS CloudWatch and CloudWatch Logs services. This will ensure
-
-persistence of all monitoring data and logs.
+* Monitoring services: Due to the ephemeral nature of container services, all monitoring
+will be done via AWS CloudWatch and CloudWatch Logs services. This will ensure persistence of all monitoring data and logs.
