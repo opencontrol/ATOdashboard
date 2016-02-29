@@ -9,15 +9,12 @@ tags: [LATO, FEDRAMP]
 items:
   - item: 'Account Management'
     todo: 10
-    doing: 10
-    done: 80   
+    doing: 0
+    done: 90   
     issues:
     - issue: info #todo, doing, done
-      text:
-      url:    
-    - issue: doing #todo, doing, done
-      text: 
-      url: https://github.com/GSA/catalog-app/issues/15
+      text: Example Link
+      url: https://datagovato.hackpad.com/Data.gov-System-Description-caCnGGsZfbP    
     contacts:
     - contact: Data.gov
       role: Owner
@@ -58,3 +55,10 @@ Identifies and selects the following types of information system accounts to sup
 
 **AC-2j Parameter Requirement:** at least annually
 * Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
+
+
+## Platform
+Document VPC, Monitoring
+
+## Application
+Application
