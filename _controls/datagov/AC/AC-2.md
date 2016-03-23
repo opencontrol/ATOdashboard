@@ -15,6 +15,15 @@ items:
     - issue: info #todo, doing, done
       text: Example Link
       url: https://datagovato.hackpad.com/Data.gov-System-Description-caCnGGsZfbP    
+    - issue: todo #todo, doing, done
+      text: Example Link
+      url: https://datagovato.hackpad.com/Data.gov-System-Description-caCnGGsZfbP 
+    - issue: doing #todo, doing, done
+      text: Example Link
+      url: https://datagovato.hackpad.com/Data.gov-System-Description-caCnGGsZfbP 
+    - issue: done #todo, doing, done
+      text: Example Link
+      url: https://datagovato.hackpad.com/Data.gov-System-Description-caCnGGsZfbP 
     contacts:
     - contact: Data.gov
       role: Owner
