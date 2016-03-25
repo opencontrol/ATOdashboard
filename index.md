@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Data.gov Services
+title:  'ATO Dashboard'
 ---
 
 ## Welcome to the Authority to Operate (ATO) Dashboard
