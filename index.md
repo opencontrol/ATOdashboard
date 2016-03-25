@@ -3,6 +3,6 @@ layout: default
 title:  Data.gov Services
 ---
 
-## Welcome to Data.gov's Authority to Operate Dashboard
+## Welcome to the Authority to Operate (ATO) Dashboard
 
-This site is used to manage the status of Authority to Operte (ATO)documentation as well as the documentation itself
+This site is used to manage the status of ATO documentation as well as the documentation itself
