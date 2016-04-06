@@ -8,9 +8,9 @@ boundary: [application]
 tags: [LATO, FEDRAMP]
 items:
   - item: 'Account Management'
-    todo: 10
+    todo: 0
     doing: 0
-    done: 90   
+    done: 100   
     issues:
     - issue: info #todo, doing, done
       text: Example Link
